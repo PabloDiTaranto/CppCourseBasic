@@ -18,6 +18,7 @@ void EmptyLinkFunctionForGeneratedCodeFloater() {}
 	ENGINE_API UClass* Z_Construct_UClass_AActor();
 	UPackage* Z_Construct_UPackage__Script_FirstProject();
 	ENGINE_API UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
+	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
 // End Cross Module References
 	void AFloater::StaticRegisterNativesAFloater()
 	{
@@ -36,6 +37,19 @@ void EmptyLinkFunctionForGeneratedCodeFloater() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_StaticMesh_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_StaticMesh;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_InitialLocation_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_InitialLocation;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_PlacedLocation_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_PlacedLocation;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_bInitializeFloaterLocations_MetaData[];
+#endif
+		static void NewProp_bInitializeFloaterLocations_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bInitializeFloaterLocations;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -58,8 +72,40 @@ void EmptyLinkFunctionForGeneratedCodeFloater() {}
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFloater_Statics::NewProp_StaticMesh = { "StaticMesh", nullptr, (EPropertyFlags)0x00100000000a0009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFloater, StaticMesh), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFloater_Statics::NewProp_StaticMesh_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AFloater_Statics::NewProp_StaticMesh_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFloater_Statics::NewProp_InitialLocation_MetaData[] = {
+		{ "Category", "Floater Variables" },
+		{ "Comment", "// Location used by SetActorLocation() when BeginPlay() is called.\n" },
+		{ "ModuleRelativePath", "GameplayActors/Floater.h" },
+		{ "ToolTip", "Location used by SetActorLocation() when BeginPlay() is called." },
+	};
+#endif
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFloater_Statics::NewProp_InitialLocation = { "InitialLocation", nullptr, (EPropertyFlags)0x0010000000000805, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFloater, InitialLocation), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UClass_AFloater_Statics::NewProp_InitialLocation_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AFloater_Statics::NewProp_InitialLocation_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFloater_Statics::NewProp_PlacedLocation_MetaData[] = {
+		{ "Category", "Floater Variables" },
+		{ "Comment", "// Location of the Actor when dragged in from the editor.\n" },
+		{ "ModuleRelativePath", "GameplayActors/Floater.h" },
+		{ "ToolTip", "Location of the Actor when dragged in from the editor." },
+	};
+#endif
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFloater_Statics::NewProp_PlacedLocation = { "PlacedLocation", nullptr, (EPropertyFlags)0x0010000000020805, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFloater, PlacedLocation), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UClass_AFloater_Statics::NewProp_PlacedLocation_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AFloater_Statics::NewProp_PlacedLocation_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFloater_Statics::NewProp_bInitializeFloaterLocations_MetaData[] = {
+		{ "Category", "Floater Variables" },
+		{ "ModuleRelativePath", "GameplayActors/Floater.h" },
+	};
+#endif
+	void Z_Construct_UClass_AFloater_Statics::NewProp_bInitializeFloaterLocations_SetBit(void* Obj)
+	{
+		((AFloater*)Obj)->bInitializeFloaterLocations = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFloater_Statics::NewProp_bInitializeFloaterLocations = { "bInitializeFloaterLocations", nullptr, (EPropertyFlags)0x0010000000010005, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AFloater), &Z_Construct_UClass_AFloater_Statics::NewProp_bInitializeFloaterLocations_SetBit, METADATA_PARAMS(Z_Construct_UClass_AFloater_Statics::NewProp_bInitializeFloaterLocations_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AFloater_Statics::NewProp_bInitializeFloaterLocations_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFloater_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFloater_Statics::NewProp_StaticMesh,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFloater_Statics::NewProp_InitialLocation,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFloater_Statics::NewProp_PlacedLocation,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFloater_Statics::NewProp_bInitializeFloaterLocations,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AFloater_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AFloater>::IsAbstract,
@@ -88,7 +134,7 @@ void EmptyLinkFunctionForGeneratedCodeFloater() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFloater, 781357431);
+	IMPLEMENT_CLASS(AFloater, 28479039);
 	template<> FIRSTPROJECT_API UClass* StaticClass<AFloater>()
 	{
 		return AFloater::StaticClass();
