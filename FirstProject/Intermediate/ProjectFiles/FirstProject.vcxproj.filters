@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\FirstProject.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{548E6B13-6108-47B3-B7F1-BD326D3358CF}</UniqueIdentifier>
+      <UniqueIdentifier>{8C4957C5-213D-49D5-ADA7-9C0B711268F2}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\FirstProject.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{A9FCE42E-4F12-4F3F-8E5B-094EFAF5337C}</UniqueIdentifier>
+      <UniqueIdentifier>{BCECD1E5-69A5-4188-B82E-A609261C1897}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -24,7 +24,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\FirstProject">
-      <UniqueIdentifier>{9683D608-548B-4D48-B19F-58DBEC18AB9E}</UniqueIdentifier>
+      <UniqueIdentifier>{BEF8627E-7189-46F4-8E99-EDE17419B1A5}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\FirstProject\FirstProject.Build.cs">
       <Filter>Source\FirstProject</Filter>
@@ -46,6 +46,21 @@
     </ClCompile>
     <ClInclude Include="..\..\Source\FirstProject\MainCharacter.h">
       <Filter>Source\FirstProject</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\FirstProject\MyObject.cpp">
+      <Filter>Source\FirstProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FirstProject\MyObject.h">
+      <Filter>Source\FirstProject</Filter>
+    </ClInclude>
+    <Filter Include="Source\FirstProject\GameplayActors">
+      <UniqueIdentifier>{F24A5E1A-880D-4D97-8A70-C30CB521C01C}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\FirstProject\GameplayActors\Floater.cpp">
+      <Filter>Source\FirstProject\GameplayActors</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FirstProject\GameplayActors\Floater.h">
+      <Filter>Source\FirstProject\GameplayActors</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
