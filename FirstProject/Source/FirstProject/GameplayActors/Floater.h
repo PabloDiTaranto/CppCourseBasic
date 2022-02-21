@@ -38,6 +38,36 @@ public:
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Floater Variables")
 	bool bInitializeFloaterLocations;
 
+	UPROPERTY(BlueprintReadWrite, EditInstanceOnly, Category = "Floater Variables")
+	FVector InitialForce;
+
+	UPROPERTY(BlueprintReadWrite, EditInstanceOnly, Category = "Floater Variables")
+	FVector InitialTorque;
+
+private:
+
+	float RunningTime;
+
+	float BaseZLocation;
+
+public:
+
+	// Amplitude - how much we oscillate up and down
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Floater Variables")
+	float A;
+
+	// Periode is 2 * PI / (absolute value of B)
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Floater Variables")
+	float B;
+
+	// Phase Shift is ( C / B )
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Floater Variables")
+	float C;
+
+	// Vertical Shift is D
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Floater Variables")
+	float D;
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
