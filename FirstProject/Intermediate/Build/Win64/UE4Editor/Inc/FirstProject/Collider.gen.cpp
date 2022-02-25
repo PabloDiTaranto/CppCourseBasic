@@ -21,6 +21,7 @@ void EmptyLinkFunctionForGeneratedCodeCollider() {}
 	ENGINE_API UClass* Z_Construct_UClass_USphereComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USpringArmComponent_NoRegister();
+	FIRSTPROJECT_API UClass* Z_Construct_UClass_UColliderMovementComponent_NoRegister();
 // End Cross Module References
 	void ACollider::StaticRegisterNativesACollider()
 	{
@@ -51,6 +52,10 @@ void EmptyLinkFunctionForGeneratedCodeCollider() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_SpringArm_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_SpringArm;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_OurMovementComponent_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_OurMovementComponent;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -98,11 +103,20 @@ void EmptyLinkFunctionForGeneratedCodeCollider() {}
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ACollider_Statics::NewProp_SpringArm = { "SpringArm", nullptr, (EPropertyFlags)0x0010000000080009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ACollider, SpringArm), Z_Construct_UClass_USpringArmComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ACollider_Statics::NewProp_SpringArm_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ACollider_Statics::NewProp_SpringArm_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ACollider_Statics::NewProp_OurMovementComponent_MetaData[] = {
+		{ "Category", "Movement" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Collider.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ACollider_Statics::NewProp_OurMovementComponent = { "OurMovementComponent", nullptr, (EPropertyFlags)0x00100000000a0009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ACollider, OurMovementComponent), Z_Construct_UClass_UColliderMovementComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ACollider_Statics::NewProp_OurMovementComponent_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ACollider_Statics::NewProp_OurMovementComponent_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ACollider_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACollider_Statics::NewProp_MeshComponent,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACollider_Statics::NewProp_SphereComponent,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACollider_Statics::NewProp_Camera,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACollider_Statics::NewProp_SpringArm,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACollider_Statics::NewProp_OurMovementComponent,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ACollider_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ACollider>::IsAbstract,
@@ -131,7 +145,7 @@ void EmptyLinkFunctionForGeneratedCodeCollider() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ACollider, 3474200823);
+	IMPLEMENT_CLASS(ACollider, 1665168724);
 	template<> FIRSTPROJECT_API UClass* StaticClass<ACollider>()
 	{
 		return ACollider::StaticClass();

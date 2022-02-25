@@ -1,18 +1,12 @@
 ﻿  Using 'git status' to determine working set for adaptive non-unity build (E:\CppCourseBasic).
-  Parsing headers for FirstProjectEditor
-    Running UnrealHeaderTool "E:\CppCourseBasic\FirstProject\FirstProject.uproject" "E:\CppCourseBasic\FirstProject\Intermediate\Build\Win64\FirstProjectEditor\Development\FirstProjectEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\Pablo\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
-  LogInit: Display: Loading text-based GConfig....
-  Reflection code generated for FirstProjectEditor in 13.2765737 seconds
   Building FirstProjectEditor...
   Using Visual Studio 2019 14.29.30140 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  Building 6 actions with 12 processes...
-    [1/6] FirstProject.init.gen.cpp
-    [2/6] Collider.cpp
-    [3/6] Collider.gen.cpp
-    [4/6] UE4Editor-FirstProject-0026.lib
-       Creating library E:\CppCourseBasic\FirstProject\Intermediate\Build\Win64\UE4Editor\Development\FirstProject\UE4Editor-FirstProject-0026.lib and object E:\CppCourseBasic\FirstProject\Intermediate\Build\Win64\UE4Editor\Development\FirstProject\UE4Editor-FirstProject-0026.exp
-    [5/6] UE4Editor-FirstProject-0026.dll
-       Creating library E:\CppCourseBasic\FirstProject\Intermediate\Build\Win64\UE4Editor\Development\FirstProject\UE4Editor-FirstProject-0026.suppressed.lib and object E:\CppCourseBasic\FirstProject\Intermediate\Build\Win64\UE4Editor\Development\FirstProject\UE4Editor-FirstProject-0026.suppressed.exp
-    [6/6] FirstProjectEditor.target
-  Total time in Parallel executor: 6.56 seconds
-  Total execution time: 22.18 seconds
+  Building 4 actions with 12 processes...
+    [1/4] Collider.cpp
+    [2/4] UE4Editor-FirstProject-0004.lib
+       Creating library E:\CppCourseBasic\FirstProject\Intermediate\Build\Win64\UE4Editor\Development\FirstProject\UE4Editor-FirstProject-0004.lib and object E:\CppCourseBasic\FirstProject\Intermediate\Build\Win64\UE4Editor\Development\FirstProject\UE4Editor-FirstProject-0004.exp
+    [3/4] UE4Editor-FirstProject-0004.dll
+       Creating library E:\CppCourseBasic\FirstProject\Intermediate\Build\Win64\UE4Editor\Development\FirstProject\UE4Editor-FirstProject-0004.suppressed.lib and object E:\CppCourseBasic\FirstProject\Intermediate\Build\Win64\UE4Editor\Development\FirstProject\UE4Editor-FirstProject-0004.suppressed.exp
+    [4/4] FirstProjectEditor.target
+  Total time in Parallel executor: 1.71 seconds
+  Total execution time: 2.30 seconds
