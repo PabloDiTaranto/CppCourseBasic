@@ -19,16 +19,22 @@ struct FHitResult;
 #define FirstProject_Source_FirstProject_FloorSwitch_h_12_SPARSE_DATA
 #define FirstProject_Source_FirstProject_FloorSwitch_h_12_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execUpdateFloorSwitchLocation); \
+	DECLARE_FUNCTION(execUpdateDoorLocation); \
 	DECLARE_FUNCTION(execOnOverlapEnd); \
 	DECLARE_FUNCTION(execOnOverlapBegin);
 
 
 #define FirstProject_Source_FirstProject_FloorSwitch_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execUpdateFloorSwitchLocation); \
+	DECLARE_FUNCTION(execUpdateDoorLocation); \
 	DECLARE_FUNCTION(execOnOverlapEnd); \
 	DECLARE_FUNCTION(execOnOverlapBegin);
 
 
+#define FirstProject_Source_FirstProject_FloorSwitch_h_12_EVENT_PARMS
+#define FirstProject_Source_FirstProject_FloorSwitch_h_12_CALLBACK_WRAPPERS
 #define FirstProject_Source_FirstProject_FloorSwitch_h_12_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFloorSwitch(); \
@@ -72,13 +78,17 @@ public: \
 
 
 #define FirstProject_Source_FirstProject_FloorSwitch_h_12_PRIVATE_PROPERTY_OFFSET
-#define FirstProject_Source_FirstProject_FloorSwitch_h_9_PROLOG
+#define FirstProject_Source_FirstProject_FloorSwitch_h_9_PROLOG \
+	FirstProject_Source_FirstProject_FloorSwitch_h_12_EVENT_PARMS
+
+
 #define FirstProject_Source_FirstProject_FloorSwitch_h_12_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	FirstProject_Source_FirstProject_FloorSwitch_h_12_PRIVATE_PROPERTY_OFFSET \
 	FirstProject_Source_FirstProject_FloorSwitch_h_12_SPARSE_DATA \
 	FirstProject_Source_FirstProject_FloorSwitch_h_12_RPC_WRAPPERS \
+	FirstProject_Source_FirstProject_FloorSwitch_h_12_CALLBACK_WRAPPERS \
 	FirstProject_Source_FirstProject_FloorSwitch_h_12_INCLASS \
 	FirstProject_Source_FirstProject_FloorSwitch_h_12_STANDARD_CONSTRUCTORS \
 public: \
@@ -91,6 +101,7 @@ public: \
 	FirstProject_Source_FirstProject_FloorSwitch_h_12_PRIVATE_PROPERTY_OFFSET \
 	FirstProject_Source_FirstProject_FloorSwitch_h_12_SPARSE_DATA \
 	FirstProject_Source_FirstProject_FloorSwitch_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+	FirstProject_Source_FirstProject_FloorSwitch_h_12_CALLBACK_WRAPPERS \
 	FirstProject_Source_FirstProject_FloorSwitch_h_12_INCLASS_NO_PURE_DECLS \
 	FirstProject_Source_FirstProject_FloorSwitch_h_12_ENHANCED_CONSTRUCTORS \
 private: \

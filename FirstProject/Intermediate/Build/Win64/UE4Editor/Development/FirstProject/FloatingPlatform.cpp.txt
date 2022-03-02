@@ -1,0 +1,3 @@
+E:\CppCourseBasic\FirstProject\Intermediate\Build\Win64\UE4Editor\Development\FirstProject\Definitions.FirstProject.h
+E:\CppCourseBasic\FirstProject\Source\FirstProject\FloatingPlatform.h
+E:\CppCourseBasic\FirstProject\Intermediate\Build\Win64\UE4Editor\Inc\FirstProject\FloatingPlatform.generated.h

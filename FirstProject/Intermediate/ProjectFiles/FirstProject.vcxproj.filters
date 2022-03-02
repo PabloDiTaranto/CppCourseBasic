@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\FirstProject.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{555E496C-5750-412E-BEC1-FE171494D0C3}</UniqueIdentifier>
+      <UniqueIdentifier>{551BF796-C857-42F2-BD8E-61451556F5AC}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\FirstProject.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{D2AC9B58-B5B0-4B44-B13E-651D724AEB8A}</UniqueIdentifier>
+      <UniqueIdentifier>{EF282B98-51EE-4187-A814-318B591BA805}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -27,7 +27,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\FirstProject">
-      <UniqueIdentifier>{DEB1FAE3-6F99-4735-B642-8B86B936B514}</UniqueIdentifier>
+      <UniqueIdentifier>{E0604561-29DC-47BD-9C6C-9D66924544C4}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\FirstProject\Collider.cpp">
       <Filter>Source\FirstProject</Filter>
@@ -62,6 +62,12 @@
     <ClInclude Include="..\..\Source\FirstProject\FirstProjectGameModeBase.h">
       <Filter>Source\FirstProject</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\FirstProject\FloatingPlatform.cpp">
+      <Filter>Source\FirstProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FirstProject\FloatingPlatform.h">
+      <Filter>Source\FirstProject</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\FirstProject\FloorSwitch.cpp">
       <Filter>Source\FirstProject</Filter>
     </ClCompile>
@@ -80,8 +86,14 @@
     <ClInclude Include="..\..\Source\FirstProject\MainAnimInstance.h">
       <Filter>Source\FirstProject</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\FirstProject\SpawnVolume.cpp">
+      <Filter>Source\FirstProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FirstProject\SpawnVolume.h">
+      <Filter>Source\FirstProject</Filter>
+    </ClInclude>
     <Filter Include="Source\FirstProject\GameplayActors">
-      <UniqueIdentifier>{520A707D-B81C-4917-AC3D-5BB162B53B2D}</UniqueIdentifier>
+      <UniqueIdentifier>{5C6605B8-6FDF-4A0E-9114-CF31A7846670}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\FirstProject\GameplayActors\Floater.cpp">
       <Filter>Source\FirstProject\GameplayActors</Filter>
