@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\FirstProject.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{551BF796-C857-42F2-BD8E-61451556F5AC}</UniqueIdentifier>
+      <UniqueIdentifier>{F5D74EE4-57ED-473B-A4EC-2B54CC8285A1}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\FirstProject.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{EF282B98-51EE-4187-A814-318B591BA805}</UniqueIdentifier>
+      <UniqueIdentifier>{4400B3A4-6A72-4435-B365-AD26AE7B8003}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -27,7 +27,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\FirstProject">
-      <UniqueIdentifier>{E0604561-29DC-47BD-9C6C-9D66924544C4}</UniqueIdentifier>
+      <UniqueIdentifier>{8B81EAC5-CC4C-49E0-8B47-2C89E367FFE1}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\FirstProject\Collider.cpp">
       <Filter>Source\FirstProject</Filter>
@@ -45,6 +45,12 @@
       <Filter>Source\FirstProject</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\FirstProject\Critter.h">
+      <Filter>Source\FirstProject</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\FirstProject\Explosive.cpp">
+      <Filter>Source\FirstProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FirstProject\Explosive.h">
       <Filter>Source\FirstProject</Filter>
     </ClInclude>
     <None Include="..\..\Source\FirstProject\FirstProject.Build.cs">
@@ -74,6 +80,12 @@
     <ClInclude Include="..\..\Source\FirstProject\FloorSwitch.h">
       <Filter>Source\FirstProject</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\FirstProject\Item.cpp">
+      <Filter>Source\FirstProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FirstProject\Item.h">
+      <Filter>Source\FirstProject</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\FirstProject\Main.cpp">
       <Filter>Source\FirstProject</Filter>
     </ClCompile>
@@ -86,6 +98,18 @@
     <ClInclude Include="..\..\Source\FirstProject\MainAnimInstance.h">
       <Filter>Source\FirstProject</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\FirstProject\MainPlayerController.cpp">
+      <Filter>Source\FirstProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FirstProject\MainPlayerController.h">
+      <Filter>Source\FirstProject</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\FirstProject\Pickup.cpp">
+      <Filter>Source\FirstProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FirstProject\Pickup.h">
+      <Filter>Source\FirstProject</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\FirstProject\SpawnVolume.cpp">
       <Filter>Source\FirstProject</Filter>
     </ClCompile>
@@ -93,7 +117,7 @@
       <Filter>Source\FirstProject</Filter>
     </ClInclude>
     <Filter Include="Source\FirstProject\GameplayActors">
-      <UniqueIdentifier>{5C6605B8-6FDF-4A0E-9114-CF31A7846670}</UniqueIdentifier>
+      <UniqueIdentifier>{CF2BF51E-2402-44A4-8FF6-795D190824B7}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\FirstProject\GameplayActors\Floater.cpp">
       <Filter>Source\FirstProject\GameplayActors</Filter>
