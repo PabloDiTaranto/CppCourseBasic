@@ -1,2 +1,2 @@
-E:\CppCourseBasic\FirstProject\Intermediate\Build\Win64\UE4Editor\Development\FirstProject\Definitions.FirstProject.h
-E:\CppCourseBasic\FirstProject\Source\FirstProject\FirstProject.h
+D:\CppCourseBasic\FirstProject\Intermediate\Build\Win64\UE4Editor\Development\FirstProject\Definitions.FirstProject.h
+D:\CppCourseBasic\FirstProject\Source\FirstProject\FirstProject.h
