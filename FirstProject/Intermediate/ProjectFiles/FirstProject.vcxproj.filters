@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\FirstProject.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{41402B8F-31BF-4958-A647-058208C2FA82}</UniqueIdentifier>
+      <UniqueIdentifier>{3076BB8E-D584-4940-967E-E9BC3EFF3AA6}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\FirstProject.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{2779AE51-5F8A-4C5C-92BB-388885222E2E}</UniqueIdentifier>
+      <UniqueIdentifier>{3E850EFC-893F-4717-A84A-847824CFB601}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -27,7 +27,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\FirstProject">
-      <UniqueIdentifier>{7F993288-AA16-42D2-AF18-BCCFF2AD15FE}</UniqueIdentifier>
+      <UniqueIdentifier>{6DD6292F-5D3D-45C8-A77A-BCF32364363A}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\FirstProject\Collider.cpp">
       <Filter>Source\FirstProject</Filter>
@@ -116,8 +116,14 @@
     <ClInclude Include="..\..\Source\FirstProject\SpawnVolume.h">
       <Filter>Source\FirstProject</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\FirstProject\Weapon.cpp">
+      <Filter>Source\FirstProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FirstProject\Weapon.h">
+      <Filter>Source\FirstProject</Filter>
+    </ClInclude>
     <Filter Include="Source\FirstProject\GameplayActors">
-      <UniqueIdentifier>{C85E13D0-2D5A-4671-A6C7-DD58CA22ADE8}</UniqueIdentifier>
+      <UniqueIdentifier>{2BAAF2F4-E3CA-4BB3-ADDA-851AC9283702}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\FirstProject\GameplayActors\Floater.cpp">
       <Filter>Source\FirstProject\GameplayActors</Filter>
