@@ -1,0 +1,12 @@
+D:\CppCourseBasic\FirstProject\Intermediate\Build\Win64\UE4Editor\Development\FirstProject\Definitions.FirstProject.h
+D:\CppCourseBasic\FirstProject\Source\FirstProject\SpawnVolume.h
+D:\CppCourseBasic\FirstProject\Intermediate\Build\Win64\UE4Editor\Inc\FirstProject\SpawnVolume.generated.h
+D:\UE_4.27\Engine\Source\Runtime\Engine\Classes\Components/BoxComponent.h
+D:\UE_4.27\Engine\Source\Runtime\Engine\Classes\Components/ShapeComponent.h
+D:\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ShapeComponent.generated.h
+D:\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\BoxComponent.generated.h
+D:\UE_4.27\Engine\Source\Runtime\Engine\Classes\Kismet/KismetMathLibrary.h
+D:\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\KismetMathLibrary.generated.h
+D:\UE_4.27\Engine\Source\Runtime\Engine\Classes\Kismet\KismetMathLibrary.inl
+D:\CppCourseBasic\FirstProject\Source\FirstProject\Critter.h
+D:\CppCourseBasic\FirstProject\Intermediate\Build\Win64\UE4Editor\Inc\FirstProject\Critter.generated.h
