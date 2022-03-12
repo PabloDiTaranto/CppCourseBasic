@@ -1,12 +1,94 @@
 ﻿  Using 'git status' to determine working set for adaptive non-unity build (D:\CppCourseBasic).
+  Deleted hot-reload file: D:\CppCourseBasic\FirstProject\Binaries\Win64\UE4Editor-FirstProject-0002.dll
+  Deleted hot-reload file: D:\CppCourseBasic\FirstProject\Binaries\Win64\UE4Editor-FirstProject-0002.pdb
+  Deleted hot-reload file: D:\CppCourseBasic\FirstProject\Binaries\Win64\UE4Editor-FirstProject-0005.dll
+  Deleted hot-reload file: D:\CppCourseBasic\FirstProject\Binaries\Win64\UE4Editor-FirstProject-0005.pdb
+  Deleted hot-reload file: D:\CppCourseBasic\FirstProject\Binaries\Win64\UE4Editor-FirstProject-0008.dll
+  Deleted hot-reload file: D:\CppCourseBasic\FirstProject\Binaries\Win64\UE4Editor-FirstProject-0009.dll
+  Deleted hot-reload file: D:\CppCourseBasic\FirstProject\Binaries\Win64\UE4Editor-FirstProject-0009.pdb
+  Deleted hot-reload file: D:\CppCourseBasic\FirstProject\Binaries\Win64\UE4Editor-FirstProject-0010.dll
+  Deleted hot-reload file: D:\CppCourseBasic\FirstProject\Binaries\Win64\UE4Editor-FirstProject-0010.pdb
+  Deleted hot-reload file: D:\CppCourseBasic\FirstProject\Binaries\Win64\UE4Editor-FirstProject-0011.dll
+  Deleted hot-reload file: D:\CppCourseBasic\FirstProject\Binaries\Win64\UE4Editor-FirstProject-0012.dll
+  Deleted hot-reload file: D:\CppCourseBasic\FirstProject\Binaries\Win64\UE4Editor-FirstProject-0012.pdb
+  Deleted hot-reload file: D:\CppCourseBasic\FirstProject\Binaries\Win64\UE4Editor-FirstProject-0013.dll
+  Deleted hot-reload file: D:\CppCourseBasic\FirstProject\Binaries\Win64\UE4Editor-FirstProject-0013.pdb
+  Deleted hot-reload file: D:\CppCourseBasic\FirstProject\Binaries\Win64\UE4Editor-FirstProject-0014.dll
+  Deleted hot-reload file: D:\CppCourseBasic\FirstProject\Binaries\Win64\UE4Editor-FirstProject-0014.pdb
+  Deleted hot-reload file: D:\CppCourseBasic\FirstProject\Binaries\Win64\UE4Editor-FirstProject-0015.dll
+  Deleted hot-reload file: D:\CppCourseBasic\FirstProject\Binaries\Win64\UE4Editor-FirstProject-0015.pdb
+  Deleted hot-reload file: D:\CppCourseBasic\FirstProject\Binaries\Win64\UE4Editor-FirstProject-0016.dll
+  Deleted hot-reload file: D:\CppCourseBasic\FirstProject\Binaries\Win64\UE4Editor-FirstProject-0016.pdb
+  Deleted hot-reload file: D:\CppCourseBasic\FirstProject\Binaries\Win64\UE4Editor-FirstProject-0017.dll
+  Deleted hot-reload file: D:\CppCourseBasic\FirstProject\Binaries\Win64\UE4Editor-FirstProject-0017.pdb
+  Deleted hot-reload file: D:\CppCourseBasic\FirstProject\Binaries\Win64\UE4Editor-FirstProject-0018.dll
+  Deleted hot-reload file: D:\CppCourseBasic\FirstProject\Binaries\Win64\UE4Editor-FirstProject-0018.pdb
+  Deleted hot-reload file: D:\CppCourseBasic\FirstProject\Binaries\Win64\UE4Editor-FirstProject-0019.dll
+  Deleted hot-reload file: D:\CppCourseBasic\FirstProject\Binaries\Win64\UE4Editor-FirstProject-0019.pdb
+  Deleted hot-reload file: D:\CppCourseBasic\FirstProject\Binaries\Win64\UE4Editor-FirstProject-0020.dll
+  Deleted hot-reload file: D:\CppCourseBasic\FirstProject\Binaries\Win64\UE4Editor-FirstProject-0020.pdb
+  Deleted hot-reload file: D:\CppCourseBasic\FirstProject\Binaries\Win64\UE4Editor-FirstProject-0021.dll
+  Deleted hot-reload file: D:\CppCourseBasic\FirstProject\Binaries\Win64\UE4Editor-FirstProject-0021.pdb
+  Deleted hot-reload file: D:\CppCourseBasic\FirstProject\Binaries\Win64\UE4Editor-FirstProject-0022.dll
+  Deleted hot-reload file: D:\CppCourseBasic\FirstProject\Binaries\Win64\UE4Editor-FirstProject-0022.pdb
+  Deleted hot-reload file: D:\CppCourseBasic\FirstProject\Binaries\Win64\UE4Editor-FirstProject-0023.dll
+  Deleted hot-reload file: D:\CppCourseBasic\FirstProject\Binaries\Win64\UE4Editor-FirstProject-0023.pdb
+  Deleted hot-reload file: D:\CppCourseBasic\FirstProject\Binaries\Win64\UE4Editor-FirstProject-0024.dll
+  Deleted hot-reload file: D:\CppCourseBasic\FirstProject\Binaries\Win64\UE4Editor-FirstProject-0024.pdb
+  Deleted hot-reload file: D:\CppCourseBasic\FirstProject\Binaries\Win64\UE4Editor-FirstProject-0025.dll
+  Deleted hot-reload file: D:\CppCourseBasic\FirstProject\Binaries\Win64\UE4Editor-FirstProject-0025.pdb
+  Deleted hot-reload file: D:\CppCourseBasic\FirstProject\Binaries\Win64\UE4Editor-FirstProject-0026.dll
+  Deleted hot-reload file: D:\CppCourseBasic\FirstProject\Binaries\Win64\UE4Editor-FirstProject-0026.pdb
+  Deleted hot-reload file: D:\CppCourseBasic\FirstProject\Binaries\Win64\UE4Editor-FirstProject-0027.dll
+  Deleted hot-reload file: D:\CppCourseBasic\FirstProject\Binaries\Win64\UE4Editor-FirstProject-0027.pdb
+  Deleted hot-reload file: D:\CppCourseBasic\FirstProject\Binaries\Win64\UE4Editor-FirstProject-0028.dll
+  Deleted hot-reload file: D:\CppCourseBasic\FirstProject\Binaries\Win64\UE4Editor-FirstProject-0028.pdb
+  Deleted hot-reload file: D:\CppCourseBasic\FirstProject\Binaries\Win64\UE4Editor-FirstProject-0029.dll
+  Deleted hot-reload file: D:\CppCourseBasic\FirstProject\Binaries\Win64\UE4Editor-FirstProject-0029.pdb
+  Deleted hot-reload file: D:\CppCourseBasic\FirstProject\Binaries\Win64\UE4Editor-FirstProject-0030.dll
+  Deleted hot-reload file: D:\CppCourseBasic\FirstProject\Binaries\Win64\UE4Editor-FirstProject-0030.pdb
+  Deleted hot-reload file: D:\CppCourseBasic\FirstProject\Binaries\Win64\UE4Editor-FirstProject-3094.dll
+  Deleted hot-reload file: D:\CppCourseBasic\FirstProject\Binaries\Win64\UE4Editor-FirstProject-3094.pdb
+  Deleted hot-reload file: D:\CppCourseBasic\FirstProject\Binaries\Win64\UE4Editor-FirstProject-4757.dll
+  Deleted hot-reload file: D:\CppCourseBasic\FirstProject\Binaries\Win64\UE4Editor-FirstProject-4757.pdb
+  Deleted hot-reload file: D:\CppCourseBasic\FirstProject\Binaries\Win64\UE4Editor-FirstProject-6258.dll
+  Deleted hot-reload file: D:\CppCourseBasic\FirstProject\Binaries\Win64\UE4Editor-FirstProject-6258.pdb
+  Deleted hot-reload file: D:\CppCourseBasic\FirstProject\Binaries\Win64\UE4Editor-FirstProject-8927.dll
+  Deleted hot-reload file: D:\CppCourseBasic\FirstProject\Binaries\Win64\UE4Editor-FirstProject-8927.pdb
+  Deleted hot-reload file: D:\CppCourseBasic\FirstProject\Intermediate\Build\Win64\UE4Editor\Development\FirstProject\UE4Editor-FirstProject-0002.lib
+  Deleted hot-reload file: D:\CppCourseBasic\FirstProject\Intermediate\Build\Win64\UE4Editor\Development\FirstProject\UE4Editor-FirstProject-0005.lib
+  Deleted hot-reload file: D:\CppCourseBasic\FirstProject\Intermediate\Build\Win64\UE4Editor\Development\FirstProject\UE4Editor-FirstProject-0009.lib
+  Deleted hot-reload file: D:\CppCourseBasic\FirstProject\Intermediate\Build\Win64\UE4Editor\Development\FirstProject\UE4Editor-FirstProject-0010.lib
+  Deleted hot-reload file: D:\CppCourseBasic\FirstProject\Intermediate\Build\Win64\UE4Editor\Development\FirstProject\UE4Editor-FirstProject-0012.lib
+  Deleted hot-reload file: D:\CppCourseBasic\FirstProject\Intermediate\Build\Win64\UE4Editor\Development\FirstProject\UE4Editor-FirstProject-0013.lib
+  Deleted hot-reload file: D:\CppCourseBasic\FirstProject\Intermediate\Build\Win64\UE4Editor\Development\FirstProject\UE4Editor-FirstProject-0014.lib
+  Deleted hot-reload file: D:\CppCourseBasic\FirstProject\Intermediate\Build\Win64\UE4Editor\Development\FirstProject\UE4Editor-FirstProject-0015.lib
+  Deleted hot-reload file: D:\CppCourseBasic\FirstProject\Intermediate\Build\Win64\UE4Editor\Development\FirstProject\UE4Editor-FirstProject-0016.lib
+  Deleted hot-reload file: D:\CppCourseBasic\FirstProject\Intermediate\Build\Win64\UE4Editor\Development\FirstProject\UE4Editor-FirstProject-0017.lib
+  Deleted hot-reload file: D:\CppCourseBasic\FirstProject\Intermediate\Build\Win64\UE4Editor\Development\FirstProject\UE4Editor-FirstProject-0018.lib
+  Deleted hot-reload file: D:\CppCourseBasic\FirstProject\Intermediate\Build\Win64\UE4Editor\Development\FirstProject\UE4Editor-FirstProject-0019.lib
+  Deleted hot-reload file: D:\CppCourseBasic\FirstProject\Intermediate\Build\Win64\UE4Editor\Development\FirstProject\UE4Editor-FirstProject-0020.lib
+  Deleted hot-reload file: D:\CppCourseBasic\FirstProject\Intermediate\Build\Win64\UE4Editor\Development\FirstProject\UE4Editor-FirstProject-0021.lib
+  Deleted hot-reload file: D:\CppCourseBasic\FirstProject\Intermediate\Build\Win64\UE4Editor\Development\FirstProject\UE4Editor-FirstProject-0022.lib
+  Deleted hot-reload file: D:\CppCourseBasic\FirstProject\Intermediate\Build\Win64\UE4Editor\Development\FirstProject\UE4Editor-FirstProject-0023.lib
+  Deleted hot-reload file: D:\CppCourseBasic\FirstProject\Intermediate\Build\Win64\UE4Editor\Development\FirstProject\UE4Editor-FirstProject-0024.lib
+  Deleted hot-reload file: D:\CppCourseBasic\FirstProject\Intermediate\Build\Win64\UE4Editor\Development\FirstProject\UE4Editor-FirstProject-0025.lib
+  Deleted hot-reload file: D:\CppCourseBasic\FirstProject\Intermediate\Build\Win64\UE4Editor\Development\FirstProject\UE4Editor-FirstProject-0026.lib
+  Deleted hot-reload file: D:\CppCourseBasic\FirstProject\Intermediate\Build\Win64\UE4Editor\Development\FirstProject\UE4Editor-FirstProject-0027.lib
+  Deleted hot-reload file: D:\CppCourseBasic\FirstProject\Intermediate\Build\Win64\UE4Editor\Development\FirstProject\UE4Editor-FirstProject-0028.lib
+  Deleted hot-reload file: D:\CppCourseBasic\FirstProject\Intermediate\Build\Win64\UE4Editor\Development\FirstProject\UE4Editor-FirstProject-0029.lib
+  Deleted hot-reload file: D:\CppCourseBasic\FirstProject\Intermediate\Build\Win64\UE4Editor\Development\FirstProject\UE4Editor-FirstProject-0030.lib
+  Deleted hot-reload file: D:\CppCourseBasic\FirstProject\Intermediate\Build\Win64\UE4Editor\Development\FirstProject\UE4Editor-FirstProject-3094.lib
+  Deleted hot-reload file: D:\CppCourseBasic\FirstProject\Intermediate\Build\Win64\UE4Editor\Development\FirstProject\UE4Editor-FirstProject-4757.lib
+  Deleted hot-reload file: D:\CppCourseBasic\FirstProject\Intermediate\Build\Win64\UE4Editor\Development\FirstProject\UE4Editor-FirstProject-6258.lib
+  Deleted hot-reload file: D:\CppCourseBasic\FirstProject\Intermediate\Build\Win64\UE4Editor\Development\FirstProject\UE4Editor-FirstProject-8927.lib
   Building FirstProjectEditor...
   Using Visual Studio 2019 14.29.30133 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  Building 4 actions with 12 processes...
-    [1/4] EnemyAnimInstance.cpp
-    [2/4] UE4Editor-FirstProject-0014.lib
-       Creating library D:\CppCourseBasic\FirstProject\Intermediate\Build\Win64\UE4Editor\Development\FirstProject\UE4Editor-FirstProject-0014.lib and object D:\CppCourseBasic\FirstProject\Intermediate\Build\Win64\UE4Editor\Development\FirstProject\UE4Editor-FirstProject-0014.exp
-    [3/4] UE4Editor-FirstProject-0014.dll
-       Creating library D:\CppCourseBasic\FirstProject\Intermediate\Build\Win64\UE4Editor\Development\FirstProject\UE4Editor-FirstProject-0014.suppressed.lib and object D:\CppCourseBasic\FirstProject\Intermediate\Build\Win64\UE4Editor\Development\FirstProject\UE4Editor-FirstProject-0014.suppressed.exp
-    [4/4] FirstProjectEditor.target
-  Total time in Parallel executor: 15.48 seconds
-  Total execution time: 16.19 seconds
+  Building 3 actions with 12 processes...
+    [1/3] UE4Editor-FirstProject.lib
+       Creating library D:\CppCourseBasic\FirstProject\Intermediate\Build\Win64\UE4Editor\Development\FirstProject\UE4Editor-FirstProject.lib and object D:\CppCourseBasic\FirstProject\Intermediate\Build\Win64\UE4Editor\Development\FirstProject\UE4Editor-FirstProject.exp
+    [2/3] UE4Editor-FirstProject.dll
+       Creating library D:\CppCourseBasic\FirstProject\Intermediate\Build\Win64\UE4Editor\Development\FirstProject\UE4Editor-FirstProject.suppressed.lib and object D:\CppCourseBasic\FirstProject\Intermediate\Build\Win64\UE4Editor\Development\FirstProject\UE4Editor-FirstProject.suppressed.exp
+    [3/3] FirstProjectEditor.target
+  Total time in Parallel executor: 1.05 seconds
+  Total execution time: 1.84 seconds
