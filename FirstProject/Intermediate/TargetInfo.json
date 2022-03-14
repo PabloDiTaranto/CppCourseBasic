@@ -2,12 +2,12 @@
 	"Targets": [
 		{
 			"Name": "FirstProject",
-			"Path": "D:\\CppCourseBasic\\FirstProject\\Source\\FirstProject.Target.cs",
+			"Path": "E:\\CppCourseBasic\\FirstProject\\Source\\FirstProject.Target.cs",
 			"Type": "Game"
 		},
 		{
 			"Name": "FirstProjectEditor",
-			"Path": "D:\\CppCourseBasic\\FirstProject\\Source\\FirstProjectEditor.Target.cs",
+			"Path": "E:\\CppCourseBasic\\FirstProject\\Source\\FirstProjectEditor.Target.cs",
 			"Type": "Editor"
 		}
 	]

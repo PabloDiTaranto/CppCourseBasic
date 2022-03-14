@@ -8,14 +8,27 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class UPrimitiveComponent;
+class AActor;
+struct FHitResult;
 #ifdef FIRSTPROJECT_Weapon_generated_h
 #error "Weapon.generated.h already included, missing '#pragma once' in Weapon.h"
 #endif
 #define FIRSTPROJECT_Weapon_generated_h
 
 #define FirstProject_Source_FirstProject_Weapon_h_25_SPARSE_DATA
-#define FirstProject_Source_FirstProject_Weapon_h_25_RPC_WRAPPERS
-#define FirstProject_Source_FirstProject_Weapon_h_25_RPC_WRAPPERS_NO_PURE_DECLS
+#define FirstProject_Source_FirstProject_Weapon_h_25_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execCombatOnOverlapEnd); \
+	DECLARE_FUNCTION(execCombatOnOverlapBegin);
+
+
+#define FirstProject_Source_FirstProject_Weapon_h_25_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execCombatOnOverlapEnd); \
+	DECLARE_FUNCTION(execCombatOnOverlapBegin);
+
+
 #define FirstProject_Source_FirstProject_Weapon_h_25_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAWeapon(); \
