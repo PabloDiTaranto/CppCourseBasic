@@ -19,12 +19,16 @@ struct FHitResult;
 #define FirstProject_Source_FirstProject_Weapon_h_25_SPARSE_DATA
 #define FirstProject_Source_FirstProject_Weapon_h_25_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execDeactivateCollision); \
+	DECLARE_FUNCTION(execActivateCollision); \
 	DECLARE_FUNCTION(execCombatOnOverlapEnd); \
 	DECLARE_FUNCTION(execCombatOnOverlapBegin);
 
 
 #define FirstProject_Source_FirstProject_Weapon_h_25_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execDeactivateCollision); \
+	DECLARE_FUNCTION(execActivateCollision); \
 	DECLARE_FUNCTION(execCombatOnOverlapEnd); \
 	DECLARE_FUNCTION(execCombatOnOverlapBegin);
 

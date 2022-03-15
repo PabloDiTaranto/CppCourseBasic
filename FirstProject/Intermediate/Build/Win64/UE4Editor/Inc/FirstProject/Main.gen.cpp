@@ -19,6 +19,8 @@ void EmptyLinkFunctionForGeneratedCodeMain() {}
 	FIRSTPROJECT_API UClass* Z_Construct_UClass_AMain_NoRegister();
 	FIRSTPROJECT_API UClass* Z_Construct_UClass_AMain();
 	ENGINE_API UClass* Z_Construct_UClass_ACharacter();
+	ENGINE_API UClass* Z_Construct_UClass_UParticleSystem_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_USoundCue_NoRegister();
 	FIRSTPROJECT_API UClass* Z_Construct_UClass_AWeapon_NoRegister();
 	FIRSTPROJECT_API UClass* Z_Construct_UClass_AItem_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USpringArmComponent_NoRegister();
@@ -149,6 +151,13 @@ void EmptyLinkFunctionForGeneratedCodeMain() {}
 		}
 		return ReturnEnum;
 	}
+	DEFINE_FUNCTION(AMain::execPlaySwingSound)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->PlaySwingSound();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(AMain::execAttackEnd)
 	{
 		P_FINISH;
@@ -168,6 +177,7 @@ void EmptyLinkFunctionForGeneratedCodeMain() {}
 		UClass* Class = AMain::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
 			{ "AttackEnd", &AMain::execAttackEnd },
+			{ "PlaySwingSound", &AMain::execPlaySwingSound },
 			{ "ShowPickupsLocations", &AMain::execShowPickupsLocations },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
@@ -191,6 +201,28 @@ void EmptyLinkFunctionForGeneratedCodeMain() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AMain_AttackEnd_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AMain_PlaySwingSound_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AMain_PlaySwingSound_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Main.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AMain_PlaySwingSound_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AMain, nullptr, "PlaySwingSound", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AMain_PlaySwingSound_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AMain_PlaySwingSound_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AMain_PlaySwingSound()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AMain_PlaySwingSound_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -227,6 +259,14 @@ void EmptyLinkFunctionForGeneratedCodeMain() {}
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_HitParticles_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_HitParticles;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_HitSound_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_HitSound;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_EquippedWeapon_MetaData[];
 #endif
@@ -316,6 +356,7 @@ void EmptyLinkFunctionForGeneratedCodeMain() {}
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AMain_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_AMain_AttackEnd, "AttackEnd" }, // 2152435191
+		{ &Z_Construct_UFunction_AMain_PlaySwingSound, "PlaySwingSound" }, // 3537128432
 		{ &Z_Construct_UFunction_AMain_ShowPickupsLocations, "ShowPickupsLocations" }, // 1089601601
 	};
 #if WITH_METADATA
@@ -325,6 +366,20 @@ void EmptyLinkFunctionForGeneratedCodeMain() {}
 		{ "ModuleRelativePath", "Main.h" },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMain_Statics::NewProp_HitParticles_MetaData[] = {
+		{ "Category", "Combat" },
+		{ "ModuleRelativePath", "Main.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AMain_Statics::NewProp_HitParticles = { "HitParticles", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMain, HitParticles), Z_Construct_UClass_UParticleSystem_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AMain_Statics::NewProp_HitParticles_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMain_Statics::NewProp_HitParticles_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMain_Statics::NewProp_HitSound_MetaData[] = {
+		{ "Category", "Combat" },
+		{ "ModuleRelativePath", "Main.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AMain_Statics::NewProp_HitSound = { "HitSound", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMain, HitSound), Z_Construct_UClass_USoundCue_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AMain_Statics::NewProp_HitSound_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMain_Statics::NewProp_HitSound_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMain_Statics::NewProp_EquippedWeapon_MetaData[] = {
 		{ "Category", "Items" },
@@ -477,6 +532,8 @@ void EmptyLinkFunctionForGeneratedCodeMain() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AMain_Statics::NewProp_CombatMontage = { "CombatMontage", nullptr, (EPropertyFlags)0x0010000000010015, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMain, CombatMontage), Z_Construct_UClass_UAnimMontage_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AMain_Statics::NewProp_CombatMontage_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMain_Statics::NewProp_CombatMontage_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AMain_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMain_Statics::NewProp_HitParticles,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMain_Statics::NewProp_HitSound,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMain_Statics::NewProp_EquippedWeapon,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMain_Statics::NewProp_ActiveOverlappingItem,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMain_Statics::NewProp_MovementStatus_Underlying,
@@ -526,7 +583,7 @@ void EmptyLinkFunctionForGeneratedCodeMain() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AMain, 3704251163);
+	IMPLEMENT_CLASS(AMain, 3919870268);
 	template<> FIRSTPROJECT_API UClass* StaticClass<AMain>()
 	{
 		return AMain::StaticClass();

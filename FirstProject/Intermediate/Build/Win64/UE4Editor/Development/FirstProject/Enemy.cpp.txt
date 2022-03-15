@@ -55,3 +55,17 @@ E:\Unreal\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\AIContr
 E:\Unreal\UE_4.27\Engine\Source\Runtime\Engine\Classes\Kismet/KismetSystemLibrary.h
 E:\Unreal\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/PropertyAccessUtil.h
 E:\Unreal\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\KismetSystemLibrary.generated.h
+E:\Unreal\UE_4.27\Engine\Source\Runtime\Engine\Classes\Components/BoxComponent.h
+E:\Unreal\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\BoxComponent.generated.h
+E:\Unreal\UE_4.27\Engine\Source\Runtime\Engine\Classes\Kismet/GameplayStatics.h
+E:\Unreal\UE_4.27\Engine\Source\Runtime\Engine\Classes\Sound/DialogueTypes.h
+E:\Unreal\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\DialogueTypes.generated.h
+E:\Unreal\UE_4.27\Engine\Source\Runtime\Engine\Classes\Kismet\GameplayStaticsTypes.h
+E:\Unreal\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameplayStaticsTypes.generated.h
+E:\Unreal\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameplayStatics.generated.h
+E:\Unreal\UE_4.27\Engine\Source\Runtime\Engine\Classes\Engine/SkeletalMeshSocket.h
+E:\Unreal\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SkeletalMeshSocket.generated.h
+E:\Unreal\UE_4.27\Engine\Source\Runtime\Engine\Classes\Sound/SoundCue.h
+E:\Unreal\UE_4.27\Engine\Source\Runtime\Engine\Classes\Sound/SoundNode.h
+E:\Unreal\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SoundNode.generated.h
+E:\Unreal\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SoundCue.generated.h

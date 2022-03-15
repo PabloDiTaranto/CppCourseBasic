@@ -84,6 +84,20 @@ void EmptyLinkFunctionForGeneratedCodeWeapon() {}
 		}
 		return ReturnEnum;
 	}
+	DEFINE_FUNCTION(AWeapon::execDeactivateCollision)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->DeactivateCollision();
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(AWeapon::execActivateCollision)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->ActivateCollision();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(AWeapon::execCombatOnOverlapEnd)
 	{
 		P_GET_OBJECT(UPrimitiveComponent,Z_Param_OverlappedComponent);
@@ -112,10 +126,34 @@ void EmptyLinkFunctionForGeneratedCodeWeapon() {}
 	{
 		UClass* Class = AWeapon::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
+			{ "ActivateCollision", &AWeapon::execActivateCollision },
 			{ "CombatOnOverlapBegin", &AWeapon::execCombatOnOverlapBegin },
 			{ "CombatOnOverlapEnd", &AWeapon::execCombatOnOverlapEnd },
+			{ "DeactivateCollision", &AWeapon::execDeactivateCollision },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_AWeapon_ActivateCollision_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AWeapon_ActivateCollision_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Weapon.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AWeapon_ActivateCollision_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AWeapon, nullptr, "ActivateCollision", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AWeapon_ActivateCollision_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AWeapon_ActivateCollision_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AWeapon_ActivateCollision()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AWeapon_ActivateCollision_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	struct Z_Construct_UFunction_AWeapon_CombatOnOverlapBegin_Statics
 	{
@@ -258,6 +296,28 @@ void EmptyLinkFunctionForGeneratedCodeWeapon() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_AWeapon_DeactivateCollision_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AWeapon_DeactivateCollision_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Weapon.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AWeapon_DeactivateCollision_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AWeapon, nullptr, "DeactivateCollision", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AWeapon_DeactivateCollision_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AWeapon_DeactivateCollision_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AWeapon_DeactivateCollision()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AWeapon_DeactivateCollision_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	UClass* Z_Construct_UClass_AWeapon_NoRegister()
 	{
 		return AWeapon::StaticClass();
@@ -295,6 +355,10 @@ void EmptyLinkFunctionForGeneratedCodeWeapon() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Damage_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_Damage;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_SwingSound_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_SwingSound;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -304,8 +368,10 @@ void EmptyLinkFunctionForGeneratedCodeWeapon() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FirstProject,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AWeapon_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_AWeapon_ActivateCollision, "ActivateCollision" }, // 3353062279
 		{ &Z_Construct_UFunction_AWeapon_CombatOnOverlapBegin, "CombatOnOverlapBegin" }, // 1069661645
 		{ &Z_Construct_UFunction_AWeapon_CombatOnOverlapEnd, "CombatOnOverlapEnd" }, // 3160546830
+		{ &Z_Construct_UFunction_AWeapon_DeactivateCollision, "DeactivateCollision" }, // 2878601581
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AWeapon_Statics::Class_MetaDataParams[] = {
@@ -363,6 +429,13 @@ void EmptyLinkFunctionForGeneratedCodeWeapon() {}
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AWeapon_Statics::NewProp_Damage = { "Damage", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AWeapon, Damage), METADATA_PARAMS(Z_Construct_UClass_AWeapon_Statics::NewProp_Damage_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AWeapon_Statics::NewProp_Damage_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AWeapon_Statics::NewProp_SwingSound_MetaData[] = {
+		{ "Category", "Item | Sound" },
+		{ "ModuleRelativePath", "Weapon.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AWeapon_Statics::NewProp_SwingSound = { "SwingSound", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AWeapon, SwingSound), Z_Construct_UClass_USoundCue_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AWeapon_Statics::NewProp_SwingSound_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AWeapon_Statics::NewProp_SwingSound_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AWeapon_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWeapon_Statics::NewProp_WeaponState_Underlying,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWeapon_Statics::NewProp_WeaponState,
@@ -371,6 +444,7 @@ void EmptyLinkFunctionForGeneratedCodeWeapon() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWeapon_Statics::NewProp_SkeletalMesh,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWeapon_Statics::NewProp_CombatCollision,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWeapon_Statics::NewProp_Damage,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWeapon_Statics::NewProp_SwingSound,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AWeapon_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AWeapon>::IsAbstract,
@@ -399,7 +473,7 @@ void EmptyLinkFunctionForGeneratedCodeWeapon() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AWeapon, 3212395281);
+	IMPLEMENT_CLASS(AWeapon, 3637462265);
 	template<> FIRSTPROJECT_API UClass* StaticClass<AWeapon>()
 	{
 		return AWeapon::StaticClass();
