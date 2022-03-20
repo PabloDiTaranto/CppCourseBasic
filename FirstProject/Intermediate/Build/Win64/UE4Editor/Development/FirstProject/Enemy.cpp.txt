@@ -69,3 +69,7 @@ E:\Unreal\UE_4.27\Engine\Source\Runtime\Engine\Classes\Sound/SoundCue.h
 E:\Unreal\UE_4.27\Engine\Source\Runtime\Engine\Classes\Sound/SoundNode.h
 E:\Unreal\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SoundNode.generated.h
 E:\Unreal\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SoundCue.generated.h
+E:\Unreal\UE_4.27\Engine\Source\Runtime\Engine\Classes\Components/CapsuleComponent.h
+E:\Unreal\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CapsuleComponent.generated.h
+E:\CppCourseBasic\FirstProject\Source\FirstProject\MainPlayerController.h
+E:\CppCourseBasic\FirstProject\Intermediate\Build\Win64\UE4Editor\Inc\FirstProject\MainPlayerController.generated.h
