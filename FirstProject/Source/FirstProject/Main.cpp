@@ -79,6 +79,9 @@ AMain::AMain()
 	bInterpToEnemy = false;
 
 	bHasCombatTarget = false;
+
+	bMovingForward = false;
+	bMovingRight = false;
 }
 
 
@@ -108,12 +111,16 @@ void AMain::Tick(float DeltaTime)
 			{
 				SetStaminaStatus(EStaminaStatus::ESS_BelowMinimun);
 				Stamina -= DeltaStamina;
+			}			
+			if (bMovingForward || bMovingRight)
+			{
+				SetMovementStatus(EMovementStatus::EMS_Sprinting);
+				Stamina -= DeltaStamina;
 			}
 			else
 			{
-				Stamina -= DeltaStamina;
+				SetMovementStatus(EMovementStatus::EMS_Normal);
 			}
-			SetMovementStatus(EMovementStatus::EMS_Sprinting);
 		}
 		else // Shift key up
 		{
@@ -141,7 +148,15 @@ void AMain::Tick(float DeltaTime)
 			else
 			{
 				Stamina -= DeltaStamina;
-				SetMovementStatus(EMovementStatus::EMS_Sprinting);
+				if (bMovingForward || bMovingRight)
+				{
+					Stamina -= DeltaStamina;
+					SetMovementStatus(EMovementStatus::EMS_Sprinting);
+				}
+				else
+				{
+					SetMovementStatus(EMovementStatus::EMS_Normal);
+				}			
 			}
 		}
 		else // Shift key up
@@ -241,6 +256,7 @@ void AMain::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 
 void AMain::MoveForward(float Value)
 {
+	bMovingForward = false;
 	if (Controller != nullptr && Value != 0.0f && !bAttacking && MovementStatus != EMovementStatus::EMS_Dead)
 	{
 		// find out which way is forward
@@ -250,11 +266,14 @@ void AMain::MoveForward(float Value)
 		const FVector Direction = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::X);
 
 		AddMovementInput(Direction, Value);
+
+		bMovingForward = true;
 	}
 }
 
 void AMain::MoveRight(float Value)
 {
+	bMovingRight = false;
 	if (Controller != nullptr && Value != 0.0f && !bAttacking && MovementStatus != EMovementStatus::EMS_Dead)
 	{
 		// find out which way is forward
@@ -264,6 +283,8 @@ void AMain::MoveRight(float Value)
 		const FVector Direction = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::Y);
 
 		AddMovementInput(Direction, Value);
+
+		bMovingRight = true;
 	}
 }
 
@@ -369,12 +390,7 @@ void AMain::SetInterpToEnemy(bool Interp)
 
 void AMain::DecrementHealth(float Amount)
 {
-	Health -= Amount;
-
-	if (Health <= 0.f)
-	{		
-		Die();
-	}
+	
 }
 
 void AMain::Die()
@@ -442,7 +458,20 @@ void AMain::ShowPickupsLocations()
 
 float AMain::TakeDamage(float DamageAmount, FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser)
 {
-	DecrementHealth(DamageAmount);
+	Health -= DamageAmount;
+
+	if (Health <= 0.f)
+	{
+		Die();
+		if (DamageCauser)
+		{
+			AEnemy* Enemy = Cast<AEnemy>(DamageCauser);
+			if (Enemy)
+			{
+				Enemy->bHasValidTarget = false;
+			}
+		}
+	}
 
 	return DamageAmount;
 }
