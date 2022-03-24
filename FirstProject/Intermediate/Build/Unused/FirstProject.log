@@ -1,18 +1,54 @@
-﻿  Using 'git status' to determine working set for adaptive non-unity build (E:\CppCourseBasic).
-  Failed to delete file 'E:\CppCourseBasic\FirstProject\Binaries\Win64\UE4Editor-FirstProject.pdb'
-      Exception: Acceso denegado a la ruta de acceso 'E:\CppCourseBasic\FirstProject\Binaries\Win64\UE4Editor-FirstProject.pdb'.
-  Attempting to retry...
-  Failed to delete file 'E:\CppCourseBasic\FirstProject\Binaries\Win64\UE4Editor-FirstProject.pdb'
-      Exception: Acceso denegado a la ruta de acceso 'E:\CppCourseBasic\FirstProject\Binaries\Win64\UE4Editor-FirstProject.pdb'.
-  Attempting to retry...
+﻿  Using 'git status' to determine working set for adaptive non-unity build (D:\CppCourseBasic).
+  Creating makefile for FirstProjectEditor (no existing makefile)
+  Parsing headers for FirstProjectEditor
+    Running UnrealHeaderTool "D:\CppCourseBasic\FirstProject\FirstProject.uproject" "D:\CppCourseBasic\FirstProject\Intermediate\Build\Win64\FirstProjectEditor\Development\FirstProjectEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\pablo\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
+  LogInit: Display: Loading text-based GConfig....
+  Reflection code generated for FirstProjectEditor in 12.2121661 seconds
   Building FirstProjectEditor...
-  Using Visual Studio 2019 14.29.30140 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  Building 4 actions with 12 processes...
-    [1/4] Main.cpp
-    [2/4] UE4Editor-FirstProject.lib
-       Creating library E:\CppCourseBasic\FirstProject\Intermediate\Build\Win64\UE4Editor\Development\FirstProject\UE4Editor-FirstProject.lib and object E:\CppCourseBasic\FirstProject\Intermediate\Build\Win64\UE4Editor\Development\FirstProject\UE4Editor-FirstProject.exp
-    [3/4] UE4Editor-FirstProject.dll
-       Creating library E:\CppCourseBasic\FirstProject\Intermediate\Build\Win64\UE4Editor\Development\FirstProject\UE4Editor-FirstProject.suppressed.lib and object E:\CppCourseBasic\FirstProject\Intermediate\Build\Win64\UE4Editor\Development\FirstProject\UE4Editor-FirstProject.suppressed.exp
-    [4/4] FirstProjectEditor.target
-  Total time in Parallel executor: 1.78 seconds
-  Total execution time: 4.19 seconds
+  Using Visual Studio 2019 14.29.30133 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+  Building 41 actions with 12 processes...
+    [1/41] Default.rc2
+    [2/41] SharedPCH.Engine.ShadowErrors.cpp
+    [3/41] FirstProjectGameModeBase.cpp
+    [4/41] Weapon.gen.cpp
+    [5/41] Critter.cpp
+    [6/41] SpawnVolume.gen.cpp
+    [7/41] FloatingPlatform.gen.cpp
+    [8/41] MainPlayerController.gen.cpp
+    [9/41] SpawnVolume.cpp
+    [10/41] FirstProjectGameModeBase.gen.cpp
+    [11/41] Pickup.cpp
+    [12/41] Main.gen.cpp
+    [13/41] Weapon.cpp
+    [14/41] ColliderMovementComponent.cpp
+    [15/41] FloorSwitch.cpp
+    [16/41] Enemy.cpp
+    [17/41] Floater.gen.cpp
+    [18/41] EnemyAnimInstance.gen.cpp
+    [19/41] Item.cpp
+    [20/41] Explosive.gen.cpp
+    [21/41] MainAnimInstance.cpp
+    [22/41] ColliderMovementComponent.gen.cpp
+    [23/41] MainAnimInstance.gen.cpp
+    [24/41] Collider.cpp
+    [25/41] Enemy.gen.cpp
+    [26/41] FirstProject.cpp
+    [27/41] Floater.cpp
+    [28/41] FirstProject.init.gen.cpp
+    [29/41] Critter.gen.cpp
+    [30/41] Collider.gen.cpp
+    [31/41] EnemyAnimInstance.cpp
+    [32/41] Item.gen.cpp
+    [33/41] FloatingPlatform.cpp
+    [34/41] Explosive.cpp
+    [35/41] FloorSwitch.gen.cpp
+    [36/41] Pickup.gen.cpp
+    [37/41] Main.cpp
+    [38/41] MainPlayerController.cpp
+    [39/41] UE4Editor-FirstProject.lib
+       Creating library D:\CppCourseBasic\FirstProject\Intermediate\Build\Win64\UE4Editor\Development\FirstProject\UE4Editor-FirstProject.lib and object D:\CppCourseBasic\FirstProject\Intermediate\Build\Win64\UE4Editor\Development\FirstProject\UE4Editor-FirstProject.exp
+    [40/41] UE4Editor-FirstProject.dll
+       Creating library D:\CppCourseBasic\FirstProject\Intermediate\Build\Win64\UE4Editor\Development\FirstProject\UE4Editor-FirstProject.suppressed.lib and object D:\CppCourseBasic\FirstProject\Intermediate\Build\Win64\UE4Editor\Development\FirstProject\UE4Editor-FirstProject.suppressed.exp
+    [41/41] FirstProjectEditor.target
+  Total time in Parallel executor: 39.25 seconds
+  Total execution time: 84.39 seconds

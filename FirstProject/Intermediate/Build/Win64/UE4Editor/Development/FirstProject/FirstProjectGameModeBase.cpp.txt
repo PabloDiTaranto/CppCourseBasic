@@ -1,0 +1,7 @@
+D:\CppCourseBasic\FirstProject\Intermediate\Build\Win64\UE4Editor\Development\FirstProject\Definitions.FirstProject.h
+D:\CppCourseBasic\FirstProject\Source\FirstProject\FirstProjectGameModeBase.h
+D:\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/GameModeBase.h
+D:\UE_4.27\Engine\Source\Runtime\Engine\Classes\Engine/ServerStatReplicator.h
+D:\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ServerStatReplicator.generated.h
+D:\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameModeBase.generated.h
+D:\CppCourseBasic\FirstProject\Intermediate\Build\Win64\UE4Editor\Inc\FirstProject\FirstProjectGameModeBase.generated.h
