@@ -1,12 +1,12 @@
-﻿  Using 'git status' to determine working set for adaptive non-unity build (D:\CppCourseBasic).
+﻿  Using 'git status' to determine working set for adaptive non-unity build (E:\CppCourseBasic).
   Building FirstProjectEditor...
-  Using Visual Studio 2019 14.29.30133 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+  Using Visual Studio 2019 14.29.30140 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
   Building 4 actions with 12 processes...
     [1/4] Enemy.cpp
     [2/4] UE4Editor-FirstProject.lib
-       Creating library D:\CppCourseBasic\FirstProject\Intermediate\Build\Win64\UE4Editor\Development\FirstProject\UE4Editor-FirstProject.lib and object D:\CppCourseBasic\FirstProject\Intermediate\Build\Win64\UE4Editor\Development\FirstProject\UE4Editor-FirstProject.exp
+       Creating library E:\CppCourseBasic\FirstProject\Intermediate\Build\Win64\UE4Editor\Development\FirstProject\UE4Editor-FirstProject.lib and object E:\CppCourseBasic\FirstProject\Intermediate\Build\Win64\UE4Editor\Development\FirstProject\UE4Editor-FirstProject.exp
     [3/4] UE4Editor-FirstProject.dll
-       Creating library D:\CppCourseBasic\FirstProject\Intermediate\Build\Win64\UE4Editor\Development\FirstProject\UE4Editor-FirstProject.suppressed.lib and object D:\CppCourseBasic\FirstProject\Intermediate\Build\Win64\UE4Editor\Development\FirstProject\UE4Editor-FirstProject.suppressed.exp
+       Creating library E:\CppCourseBasic\FirstProject\Intermediate\Build\Win64\UE4Editor\Development\FirstProject\UE4Editor-FirstProject.suppressed.lib and object E:\CppCourseBasic\FirstProject\Intermediate\Build\Win64\UE4Editor\Development\FirstProject\UE4Editor-FirstProject.suppressed.exp
     [4/4] FirstProjectEditor.target
-  Total time in Parallel executor: 331.21 seconds
-  Total execution time: 332.33 seconds
+  Total time in Parallel executor: 3.91 seconds
+  Total execution time: 4.39 seconds

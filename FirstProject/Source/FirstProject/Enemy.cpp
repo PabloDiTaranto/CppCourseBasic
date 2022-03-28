@@ -26,6 +26,7 @@ AEnemy::AEnemy()
 
 	AgroSphere = CreateDefaultSubobject<USphereComponent>(TEXT("AgroSphere"));
 	AgroSphere->SetupAttachment(GetRootComponent());
+	AgroSphere->SetCollisionResponseToChannel(ECollisionChannel::ECC_WorldDynamic, ECollisionResponse::ECR_Ignore);
 	AgroSphere->InitSphereRadius(600.f);
 
 	CombatSphere = CreateDefaultSubobject<USphereComponent>(TEXT("CombatSphere"));
@@ -146,7 +147,9 @@ void AEnemy::CombatSphereOnOverlapBegin(UPrimitiveComponent* OverlappedComponent
 
 			CombatTarget = Main;
 			bOverlappingCombatSphere = true;
-			Attack();
+
+			float AttackTime = FMath::FRandRange(AttackMinTime, AttackMaxTime);
+			GetWorldTimerManager().SetTimer(AttackTimer, this, &AEnemy::Attack, AttackTime);
 		}
 	}
 }
@@ -159,7 +162,7 @@ void AEnemy::CombatSphereOnOverlapEnd(UPrimitiveComponent* OverlappedComponent, 
 		if (Main)
 		{
 			bOverlappingCombatSphere = false;
-			if (EnemyMovementStatus != EEnemyMovementStatus::EMS_Attacking)
+			if (EnemyMovementStatus == EEnemyMovementStatus::EMS_Attacking)
 			{
 				MoveToTarget(Main);
 				CombatTarget = nullptr;
@@ -299,6 +302,17 @@ void AEnemy::Die()
 		AnimInstance->Montage_JumpToSection(FName("Death"), CombatMontage);
 	}
 	SetEnemyMovementStatus(EEnemyMovementStatus::EMS_Dead);
+
+	AActor* PlayerCharacter = UGameplayStatics::GetPlayerCharacter(GetWorld(), 0);
+
+	if (PlayerCharacter)
+	{
+		AMain* Main = Cast<AMain>(PlayerCharacter);
+		if (Main)
+		{
+			Main->MainPlayerController->RemoveEnemyHealthBar();
+		}
+	}
 
 	CombatCollision->SetCollisionEnabled(ECollisionEnabled::NoCollision);
 	AgroSphere->SetCollisionEnabled(ECollisionEnabled::NoCollision);
