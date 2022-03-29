@@ -19,6 +19,8 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	DECLARE_FUNCTION(execDeathEnd); \
 	DECLARE_FUNCTION(execPlaySwingSound); \
 	DECLARE_FUNCTION(execAttackEnd); \
+	DECLARE_FUNCTION(execIncrementHealth); \
+	DECLARE_FUNCTION(execIncrementCoin); \
 	DECLARE_FUNCTION(execShowPickupsLocations);
 
 
@@ -27,6 +29,8 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	DECLARE_FUNCTION(execDeathEnd); \
 	DECLARE_FUNCTION(execPlaySwingSound); \
 	DECLARE_FUNCTION(execAttackEnd); \
+	DECLARE_FUNCTION(execIncrementHealth); \
+	DECLARE_FUNCTION(execIncrementCoin); \
 	DECLARE_FUNCTION(execShowPickupsLocations);
 
 
