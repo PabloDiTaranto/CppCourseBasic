@@ -77,6 +77,10 @@ static struct FScriptStruct_FirstProject_StaticRegisterNativesFCharacterStats
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Rotation_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FStructPropertyParams NewProp_Rotation;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_WeaponName_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_WeaponName;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const UE4CodeGen_Private::FStructParams ReturnStructParams;
 	};
@@ -139,6 +143,13 @@ static struct FScriptStruct_FirstProject_StaticRegisterNativesFCharacterStats
 	};
 #endif
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FCharacterStats_Statics::NewProp_Rotation = { "Rotation", nullptr, (EPropertyFlags)0x0010000000020001, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FCharacterStats, Rotation), Z_Construct_UScriptStruct_FRotator, METADATA_PARAMS(Z_Construct_UScriptStruct_FCharacterStats_Statics::NewProp_Rotation_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FCharacterStats_Statics::NewProp_Rotation_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FCharacterStats_Statics::NewProp_WeaponName_MetaData[] = {
+		{ "Category", "SaveGameData" },
+		{ "ModuleRelativePath", "FirstSaveGame.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FCharacterStats_Statics::NewProp_WeaponName = { "WeaponName", nullptr, (EPropertyFlags)0x0010000000020001, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FCharacterStats, WeaponName), METADATA_PARAMS(Z_Construct_UScriptStruct_FCharacterStats_Statics::NewProp_WeaponName_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FCharacterStats_Statics::NewProp_WeaponName_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FCharacterStats_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FCharacterStats_Statics::NewProp_Health,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FCharacterStats_Statics::NewProp_MaxHealth,
@@ -147,6 +158,7 @@ static struct FScriptStruct_FirstProject_StaticRegisterNativesFCharacterStats
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FCharacterStats_Statics::NewProp_Coins,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FCharacterStats_Statics::NewProp_Location,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FCharacterStats_Statics::NewProp_Rotation,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FCharacterStats_Statics::NewProp_WeaponName,
 	};
 	const UE4CodeGen_Private::FStructParams Z_Construct_UScriptStruct_FCharacterStats_Statics::ReturnStructParams = {
 		(UObject* (*)())Z_Construct_UPackage__Script_FirstProject,
@@ -176,7 +188,7 @@ static struct FScriptStruct_FirstProject_StaticRegisterNativesFCharacterStats
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FCharacterStats_Hash() { return 3619117812U; }
+	uint32 Get_Z_Construct_UScriptStruct_FCharacterStats_Hash() { return 3030814461U; }
 	void UFirstSaveGame::StaticRegisterNativesUFirstSaveGame()
 	{
 	}
@@ -199,9 +211,9 @@ static struct FScriptStruct_FirstProject_StaticRegisterNativesFCharacterStats
 #endif
 		static const UE4CodeGen_Private::FUInt32PropertyParams NewProp_UserIndex;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_CharaceterStats_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_CharacterStats_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FStructPropertyParams NewProp_CharaceterStats;
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_CharacterStats;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -232,16 +244,16 @@ static struct FScriptStruct_FirstProject_StaticRegisterNativesFCharacterStats
 #endif
 	const UE4CodeGen_Private::FUInt32PropertyParams Z_Construct_UClass_UFirstSaveGame_Statics::NewProp_UserIndex = { "UserIndex", nullptr, (EPropertyFlags)0x0010000000020001, UE4CodeGen_Private::EPropertyGenFlags::UInt32, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFirstSaveGame, UserIndex), METADATA_PARAMS(Z_Construct_UClass_UFirstSaveGame_Statics::NewProp_UserIndex_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UFirstSaveGame_Statics::NewProp_UserIndex_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFirstSaveGame_Statics::NewProp_CharaceterStats_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFirstSaveGame_Statics::NewProp_CharacterStats_MetaData[] = {
 		{ "Category", "Basic" },
 		{ "ModuleRelativePath", "FirstSaveGame.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UFirstSaveGame_Statics::NewProp_CharaceterStats = { "CharaceterStats", nullptr, (EPropertyFlags)0x0010000000020001, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFirstSaveGame, CharaceterStats), Z_Construct_UScriptStruct_FCharacterStats, METADATA_PARAMS(Z_Construct_UClass_UFirstSaveGame_Statics::NewProp_CharaceterStats_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UFirstSaveGame_Statics::NewProp_CharaceterStats_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UFirstSaveGame_Statics::NewProp_CharacterStats = { "CharacterStats", nullptr, (EPropertyFlags)0x0010000000020001, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFirstSaveGame, CharacterStats), Z_Construct_UScriptStruct_FCharacterStats, METADATA_PARAMS(Z_Construct_UClass_UFirstSaveGame_Statics::NewProp_CharacterStats_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UFirstSaveGame_Statics::NewProp_CharacterStats_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UFirstSaveGame_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFirstSaveGame_Statics::NewProp_PLayerName,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFirstSaveGame_Statics::NewProp_UserIndex,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFirstSaveGame_Statics::NewProp_CharaceterStats,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFirstSaveGame_Statics::NewProp_CharacterStats,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFirstSaveGame_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UFirstSaveGame>::IsAbstract,
@@ -270,7 +282,7 @@ static struct FScriptStruct_FirstProject_StaticRegisterNativesFCharacterStats
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFirstSaveGame, 3173108446);
+	IMPLEMENT_CLASS(UFirstSaveGame, 3654825970);
 	template<> FIRSTPROJECT_API UClass* StaticClass<UFirstSaveGame>()
 	{
 		return UFirstSaveGame::StaticClass();

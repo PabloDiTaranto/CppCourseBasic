@@ -17,6 +17,7 @@
 #include "Enemy.h"
 #include "MainPlayerController.h"
 #include "FirstSaveGame.h"
+#include "ItemStorage.h"
 
 // Sets default values
 AMain::AMain()
@@ -554,14 +555,19 @@ void AMain::SaveGame()
 {
 	UFirstSaveGame* SaveGameInstance = Cast<UFirstSaveGame>(UGameplayStatics::CreateSaveGameObject(UFirstSaveGame::StaticClass()));
 
-	SaveGameInstance->CharaceterStats.Health = Health;
-	SaveGameInstance->CharaceterStats.MaxHealth = MaxHealth;
-	SaveGameInstance->CharaceterStats.Stamina = Stamina;
-	SaveGameInstance->CharaceterStats.MaxStamina = MaxStamina;
-	SaveGameInstance->CharaceterStats.Coins = Coins;
+	SaveGameInstance->CharacterStats.Health = Health;
+	SaveGameInstance->CharacterStats.MaxHealth = MaxHealth;
+	SaveGameInstance->CharacterStats.Stamina = Stamina;
+	SaveGameInstance->CharacterStats.MaxStamina = MaxStamina;
+	SaveGameInstance->CharacterStats.Coins = Coins;
 
-	SaveGameInstance->CharaceterStats.Location = GetActorLocation();
-	SaveGameInstance->CharaceterStats.Rotation = GetActorRotation();
+	if (EquippedWeapon)
+	{
+		SaveGameInstance->CharacterStats.WeaponName = EquippedWeapon->Name;
+	}
+
+	SaveGameInstance->CharacterStats.Location = GetActorLocation();
+	SaveGameInstance->CharacterStats.Rotation = GetActorRotation();
 	
 
 	UGameplayStatics::SaveGameToSlot(SaveGameInstance, SaveGameInstance->PLayerName, SaveGameInstance->UserIndex);
@@ -575,16 +581,33 @@ void AMain::LoadGame(bool SetPosition)
 
 	if (LoadGameInstance)
 	{
-		Health = LoadGameInstance->CharaceterStats.Health;
-		MaxHealth = LoadGameInstance->CharaceterStats.MaxHealth;
-		Stamina = LoadGameInstance->CharaceterStats.Stamina;
-		MaxStamina = LoadGameInstance->CharaceterStats.MaxStamina;
-		Coins = LoadGameInstance->CharaceterStats.Coins;
+		Health = LoadGameInstance->CharacterStats.Health;
+		MaxHealth = LoadGameInstance->CharacterStats.MaxHealth;
+		Stamina = LoadGameInstance->CharacterStats.Stamina;
+		MaxStamina = LoadGameInstance->CharacterStats.MaxStamina;
+		Coins = LoadGameInstance->CharacterStats.Coins;
+
+		if (WeaponStorage)
+		{
+			AItemStorage* Weapons =  GetWorld()->SpawnActor<AItemStorage>(WeaponStorage);
+			if (Weapons)
+			{
+				FString  WeaponName = LoadGameInstance->CharacterStats.WeaponName;
+
+				if (Weapons->WeaponMap.Contains(WeaponName))
+				{
+					AWeapon* WeaponToEquip = GetWorld()->SpawnActor<AWeapon>(Weapons->WeaponMap[WeaponName]);
+
+					WeaponToEquip->Equip(this);
+				}
+			}
+		}
+
 
 		if (SetPosition)
 		{
-			SetActorLocation(LoadGameInstance->CharaceterStats.Location);
-			SetActorRotation(LoadGameInstance->CharaceterStats.Rotation);
+			SetActorLocation(LoadGameInstance->CharacterStats.Location);
+			SetActorRotation(LoadGameInstance->CharacterStats.Rotation);
 		}
 	}
 }

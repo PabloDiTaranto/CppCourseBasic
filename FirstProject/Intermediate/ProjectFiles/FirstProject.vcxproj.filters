@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\FirstProject.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{FAC7794D-69FD-4030-8D07-E3899382A244}</UniqueIdentifier>
+      <UniqueIdentifier>{D8C701C6-C9BF-4D62-9F08-930508727A43}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\FirstProject.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{6E164B82-C081-4DB4-9BD5-40E04C4EAF76}</UniqueIdentifier>
+      <UniqueIdentifier>{92D4E0D0-8852-4FB5-9567-C5E7F020C1B4}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -27,7 +27,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\FirstProject">
-      <UniqueIdentifier>{5BDAA0F4-1A6C-4C39-8969-229332F94CE9}</UniqueIdentifier>
+      <UniqueIdentifier>{F9BE8B83-4252-48C5-90AB-8B181C758020}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\FirstProject\Collider.cpp">
       <Filter>Source\FirstProject</Filter>
@@ -104,6 +104,12 @@
     <ClInclude Include="..\..\Source\FirstProject\Item.h">
       <Filter>Source\FirstProject</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\FirstProject\ItemStorage.cpp">
+      <Filter>Source\FirstProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FirstProject\ItemStorage.h">
+      <Filter>Source\FirstProject</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\FirstProject\LevelTransitionVolume.cpp">
       <Filter>Source\FirstProject</Filter>
     </ClCompile>
@@ -147,7 +153,7 @@
       <Filter>Source\FirstProject</Filter>
     </ClInclude>
     <Filter Include="Source\FirstProject\GameplayActors">
-      <UniqueIdentifier>{B761CEC4-6BAC-49CB-A348-8C625A09E0C2}</UniqueIdentifier>
+      <UniqueIdentifier>{7F026828-4EFB-4441-9567-3303CFD43F83}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\FirstProject\GameplayActors\Floater.cpp">
       <Filter>Source\FirstProject\GameplayActors</Filter>

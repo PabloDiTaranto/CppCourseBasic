@@ -59,3 +59,5 @@ E:\CppCourseBasic\FirstProject\Source\FirstProject\FirstSaveGame.h
 E:\Unreal\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/SaveGame.h
 E:\Unreal\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SaveGame.generated.h
 E:\CppCourseBasic\FirstProject\Intermediate\Build\Win64\UE4Editor\Inc\FirstProject\FirstSaveGame.generated.h
+E:\CppCourseBasic\FirstProject\Source\FirstProject\ItemStorage.h
+E:\CppCourseBasic\FirstProject\Intermediate\Build\Win64\UE4Editor\Inc\FirstProject\ItemStorage.generated.h
