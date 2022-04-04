@@ -16,6 +16,7 @@
 #include "Kismet/KismetMathLibrary.h"
 #include "Enemy.h"
 #include "MainPlayerController.h"
+#include "FirstSaveGame.h"
 
 // Sets default values
 AMain::AMain()
@@ -530,5 +531,60 @@ void AMain::UpdateCombatTarget()
 		}
 		SetCombatTarget(ClosestEnemy);
 		bHasCombatTarget = true;
+	}
+}
+
+void AMain::SwitchLevel(FName LevelName)
+{
+	UWorld* World = GetWorld();
+	if (World)
+	{
+		FString CurrentLevel = World->GetMapName();
+
+		FName CurrentLevelName(*CurrentLevel);
+
+		if (CurrentLevelName != LevelName)
+		{
+			UGameplayStatics::OpenLevel(World, LevelName);
+		}
+	}
+}
+
+void AMain::SaveGame()
+{
+	UFirstSaveGame* SaveGameInstance = Cast<UFirstSaveGame>(UGameplayStatics::CreateSaveGameObject(UFirstSaveGame::StaticClass()));
+
+	SaveGameInstance->CharaceterStats.Health = Health;
+	SaveGameInstance->CharaceterStats.MaxHealth = MaxHealth;
+	SaveGameInstance->CharaceterStats.Stamina = Stamina;
+	SaveGameInstance->CharaceterStats.MaxStamina = MaxStamina;
+	SaveGameInstance->CharaceterStats.Coins = Coins;
+
+	SaveGameInstance->CharaceterStats.Location = GetActorLocation();
+	SaveGameInstance->CharaceterStats.Rotation = GetActorRotation();
+	
+
+	UGameplayStatics::SaveGameToSlot(SaveGameInstance, SaveGameInstance->PLayerName, SaveGameInstance->UserIndex);
+}
+
+void AMain::LoadGame(bool SetPosition)
+{
+	UFirstSaveGame* LoadGameInstance = Cast<UFirstSaveGame>(UGameplayStatics::CreateSaveGameObject(UFirstSaveGame::StaticClass()));
+
+	LoadGameInstance = Cast<UFirstSaveGame>(UGameplayStatics::LoadGameFromSlot(LoadGameInstance->PLayerName, LoadGameInstance->UserIndex));
+
+	if (LoadGameInstance)
+	{
+		Health = LoadGameInstance->CharaceterStats.Health;
+		MaxHealth = LoadGameInstance->CharaceterStats.MaxHealth;
+		Stamina = LoadGameInstance->CharaceterStats.Stamina;
+		MaxStamina = LoadGameInstance->CharaceterStats.MaxStamina;
+		Coins = LoadGameInstance->CharaceterStats.Coins;
+
+		if (SetPosition)
+		{
+			SetActorLocation(LoadGameInstance->CharaceterStats.Location);
+			SetActorRotation(LoadGameInstance->CharaceterStats.Rotation);
+		}
 	}
 }

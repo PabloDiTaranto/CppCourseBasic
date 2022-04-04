@@ -158,6 +158,21 @@ void EmptyLinkFunctionForGeneratedCodeMain() {}
 		}
 		return ReturnEnum;
 	}
+	DEFINE_FUNCTION(AMain::execLoadGame)
+	{
+		P_GET_UBOOL(Z_Param_SetPosition);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->LoadGame(Z_Param_SetPosition);
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(AMain::execSaveGame)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->SaveGame();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(AMain::execDeathEnd)
 	{
 		P_FINISH;
@@ -210,7 +225,9 @@ void EmptyLinkFunctionForGeneratedCodeMain() {}
 			{ "DeathEnd", &AMain::execDeathEnd },
 			{ "IncrementCoin", &AMain::execIncrementCoin },
 			{ "IncrementHealth", &AMain::execIncrementHealth },
+			{ "LoadGame", &AMain::execLoadGame },
 			{ "PlaySwingSound", &AMain::execPlaySwingSound },
+			{ "SaveGame", &AMain::execSaveGame },
 			{ "ShowPickupsLocations", &AMain::execShowPickupsLocations },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
@@ -323,6 +340,43 @@ void EmptyLinkFunctionForGeneratedCodeMain() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_AMain_LoadGame_Statics
+	{
+		struct Main_eventLoadGame_Parms
+		{
+			bool SetPosition;
+		};
+		static void NewProp_SetPosition_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_SetPosition;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	void Z_Construct_UFunction_AMain_LoadGame_Statics::NewProp_SetPosition_SetBit(void* Obj)
+	{
+		((Main_eventLoadGame_Parms*)Obj)->SetPosition = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AMain_LoadGame_Statics::NewProp_SetPosition = { "SetPosition", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(Main_eventLoadGame_Parms), &Z_Construct_UFunction_AMain_LoadGame_Statics::NewProp_SetPosition_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AMain_LoadGame_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AMain_LoadGame_Statics::NewProp_SetPosition,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AMain_LoadGame_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Main.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AMain_LoadGame_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AMain, nullptr, "LoadGame", nullptr, nullptr, sizeof(Main_eventLoadGame_Parms), Z_Construct_UFunction_AMain_LoadGame_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AMain_LoadGame_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AMain_LoadGame_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AMain_LoadGame_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AMain_LoadGame()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AMain_LoadGame_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_AMain_PlaySwingSound_Statics
 	{
 #if WITH_METADATA
@@ -342,6 +396,28 @@ void EmptyLinkFunctionForGeneratedCodeMain() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AMain_PlaySwingSound_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AMain_SaveGame_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AMain_SaveGame_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Main.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AMain_SaveGame_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AMain, nullptr, "SaveGame", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AMain_SaveGame_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AMain_SaveGame_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AMain_SaveGame()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AMain_SaveGame_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -499,7 +575,9 @@ void EmptyLinkFunctionForGeneratedCodeMain() {}
 		{ &Z_Construct_UFunction_AMain_DeathEnd, "DeathEnd" }, // 1337927502
 		{ &Z_Construct_UFunction_AMain_IncrementCoin, "IncrementCoin" }, // 836152585
 		{ &Z_Construct_UFunction_AMain_IncrementHealth, "IncrementHealth" }, // 2495941764
+		{ &Z_Construct_UFunction_AMain_LoadGame, "LoadGame" }, // 932701903
 		{ &Z_Construct_UFunction_AMain_PlaySwingSound, "PlaySwingSound" }, // 3537128432
+		{ &Z_Construct_UFunction_AMain_SaveGame, "SaveGame" }, // 1842646444
 		{ &Z_Construct_UFunction_AMain_ShowPickupsLocations, "ShowPickupsLocations" }, // 1089601601
 	};
 #if WITH_METADATA
@@ -770,7 +848,7 @@ void EmptyLinkFunctionForGeneratedCodeMain() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AMain, 749673700);
+	IMPLEMENT_CLASS(AMain, 1957477118);
 	template<> FIRSTPROJECT_API UClass* StaticClass<AMain>()
 	{
 		return AMain::StaticClass();

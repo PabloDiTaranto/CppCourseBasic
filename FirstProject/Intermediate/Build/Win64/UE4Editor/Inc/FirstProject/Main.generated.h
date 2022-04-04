@@ -16,6 +16,8 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define FirstProject_Source_FirstProject_Main_h_33_SPARSE_DATA
 #define FirstProject_Source_FirstProject_Main_h_33_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execLoadGame); \
+	DECLARE_FUNCTION(execSaveGame); \
 	DECLARE_FUNCTION(execDeathEnd); \
 	DECLARE_FUNCTION(execPlaySwingSound); \
 	DECLARE_FUNCTION(execAttackEnd); \
@@ -26,6 +28,8 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 #define FirstProject_Source_FirstProject_Main_h_33_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execLoadGame); \
+	DECLARE_FUNCTION(execSaveGame); \
 	DECLARE_FUNCTION(execDeathEnd); \
 	DECLARE_FUNCTION(execPlaySwingSound); \
 	DECLARE_FUNCTION(execAttackEnd); \
