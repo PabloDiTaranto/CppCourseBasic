@@ -117,7 +117,7 @@ public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
 	class UCameraComponent* FollowCamera;
 
-	/** Base turn rates to sacñe turning functions for the camera */
+	/** Base turn rates to sacï¿½e turning functions for the camera */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera)
 	float BaseTurnRate;
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera)
@@ -191,6 +191,10 @@ public:
 	bool bLMBDown;
 	void LMBDown();
 	void LMBUp();
+
+	bool bESCDown;
+	void ESCDown();
+	void ESCUp();
 
 	FORCEINLINE class USpringArmComponent* GetCameraBoom() const { return CameraBoom; }
 	FORCEINLINE class UCameraComponent* GetFollowCamera() const { return FollowCamera; }

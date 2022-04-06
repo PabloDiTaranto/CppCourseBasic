@@ -85,6 +85,6 @@ public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Combat")
 	AController* WeaponInstigator;
 
-	FORCEINLINE void SetInstigator(AController* Inst) { WeaponInstigator = Inst; }
+	FORCEINLINE void SetInstigator(AController* Inst) { WeaponInstigator = Inst; }	
 };
 

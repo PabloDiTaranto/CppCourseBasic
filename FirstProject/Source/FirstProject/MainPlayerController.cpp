@@ -8,7 +8,7 @@
 void AMainPlayerController::BeginPlay()
 {
 	Super::BeginPlay();
-
+	
 	if (HUDOverlayAsset)
 	{
 		HUDOverlay = CreateWidget<UUserWidget>(this, HUDOverlayAsset);
@@ -27,7 +27,18 @@ void AMainPlayerController::BeginPlay()
 		FVector2D Alignment(0.f);
 		EnemyHealthBar->SetAlignmentInViewport(Alignment);
 	}
+
+	if (WPauseMenu)
+	{
+		PauseMenu = CreateWidget<UUserWidget>(this, WPauseMenu);
+		if (PauseMenu)
+		{
+			PauseMenu->AddToViewport();
+			PauseMenu->SetVisibility(ESlateVisibility::Hidden);
+		}
+	}
 }
+
 
 void AMainPlayerController::Tick(float DeltaTime)
 {
@@ -46,6 +57,7 @@ void AMainPlayerController::Tick(float DeltaTime)
 	}
 }
 
+
 void AMainPlayerController::DisplayEnemyHealthBar()
 {
 	if (EnemyHealthBar)
@@ -61,5 +73,40 @@ void AMainPlayerController::RemoveEnemyHealthBar()
 	{
 		bEnemyHealthBarVisible = false;
 		EnemyHealthBar->SetVisibility(ESlateVisibility::Hidden);
+	}
+}
+
+void AMainPlayerController::DisplayPauseMenu_Implementation()
+{
+	//Print a message to the console
+	GEngine->AddOnScreenDebugMessage(1,5.f,FColor::Red,TEXT("Pause Menu"));
+	if(PauseMenu)
+	{
+		bPauseMenuVisible = true;
+		PauseMenu->SetVisibility(ESlateVisibility::Visible);
+	}
+}
+
+void AMainPlayerController::RemovePauseMenu_Implementation()
+{
+	if(PauseMenu)
+	{
+		bPauseMenuVisible = false;
+		PauseMenu->SetVisibility(ESlateVisibility::Hidden);
+	}
+}
+
+void AMainPlayerController::TogglePauseMenu()
+{
+	if(bPauseMenuVisible)
+	{
+		RemovePauseMenu();
+		bPauseMenuVisible = false;
+	}
+	else
+	{
+		DisplayPauseMenu();
+		bPauseMenuVisible = true;
+
 	}
 }

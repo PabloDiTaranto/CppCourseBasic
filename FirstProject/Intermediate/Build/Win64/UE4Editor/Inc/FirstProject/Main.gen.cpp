@@ -728,9 +728,9 @@ void EmptyLinkFunctionForGeneratedCodeMain() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMain_Statics::NewProp_BaseTurnRate_MetaData[] = {
 		{ "Category", "Camera" },
-		{ "Comment", "/** Base turn rates to sac?e turning functions for the camera */" },
+		{ "Comment", "/** Base turn rates to sac\xef\xbf\xbd""e turning functions for the camera */" },
 		{ "ModuleRelativePath", "Main.h" },
-		{ "ToolTip", "Base turn rates to sac?e turning functions for the camera" },
+		{ "ToolTip", "Base turn rates to sac\xef\xbf\xbd""e turning functions for the camera" },
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AMain_Statics::NewProp_BaseTurnRate = { "BaseTurnRate", nullptr, (EPropertyFlags)0x0010000000020015, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMain, BaseTurnRate), METADATA_PARAMS(Z_Construct_UClass_AMain_Statics::NewProp_BaseTurnRate_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMain_Statics::NewProp_BaseTurnRate_MetaData)) };
@@ -861,7 +861,7 @@ void EmptyLinkFunctionForGeneratedCodeMain() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AMain, 2120404855);
+	IMPLEMENT_CLASS(AMain, 3196096109);
 	template<> FIRSTPROJECT_API UClass* StaticClass<AMain>()
 	{
 		return AMain::StaticClass();

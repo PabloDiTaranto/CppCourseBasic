@@ -1,5 +1,0 @@
-E:\CppCourseBasic\FirstProject\Intermediate\Build\Win64\UE4Editor\Development\FirstProject\Definitions.FirstProject.h
-E:\Unreal\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
-E:\Unreal\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
-E:\CppCourseBasic\FirstProject\Source\FirstProject/MainPlayerController.h
-E:\CppCourseBasic\FirstProject\Intermediate\Build\Win64\UE4Editor\Inc\FirstProject\MainPlayerController.generated.h
