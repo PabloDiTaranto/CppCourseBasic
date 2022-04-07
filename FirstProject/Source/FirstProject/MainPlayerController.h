@@ -39,9 +39,15 @@ public:
 
 	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "HUD")
 	void DisplayPauseMenu();
+
+	UFUNCTION(BlueprintCallable, Category = "HUD")
+	void DisplayPauseMenu_Implementation();
 	
 	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "HUD")
 	void RemovePauseMenu();
+
+	UFUNCTION(BlueprintCallable, Category = "HUD")
+	void RemovePauseMenu_Implementation();
 	
 	void TogglePauseMenu();
 	
@@ -51,6 +57,8 @@ public:
 	void RemoveEnemyHealthBar();
 
 	FVector EnemyLocation;
+
+	void GameModeOnly();
 
 protected:
 	virtual void BeginPlay() override;

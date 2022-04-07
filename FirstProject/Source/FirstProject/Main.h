@@ -175,8 +175,16 @@ public:
 	/** Called for side to side input */
 	void MoveRight(float Value);
 
+	/** Called for Yaw rotation */
+	void Turn(float Value);
+
+	/** Called for Pitch rotation */
+	void LookUp(float Value);
+
 	bool bMovingForward;
 	bool bMovingRight;
+
+	bool CanMove(float Value);
 
 	/** Called via input to turn at a given rate 
 	* @param Rate This a normalized rate, i.e. 1.0 means 100% of desired turn rate
@@ -232,4 +240,7 @@ public:
 
 	UFUNCTION(BlueprintCallable)
 	void LoadGame(bool SetPosition);
+
+	void LoadGameNoSwitch();
+
 };

@@ -18,15 +18,17 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	virtual void RemovePauseMenu_Implementation(); \
 	virtual void DisplayPauseMenu_Implementation(); \
  \
+	DECLARE_FUNCTION(execRemovePauseMenu_Implementation); \
 	DECLARE_FUNCTION(execRemovePauseMenu); \
+	DECLARE_FUNCTION(execDisplayPauseMenu_Implementation); \
 	DECLARE_FUNCTION(execDisplayPauseMenu);
 
 
 #define FirstProject_Source_FirstProject_MainPlayerController_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
-	virtual void RemovePauseMenu_Implementation(); \
-	virtual void DisplayPauseMenu_Implementation(); \
  \
+	DECLARE_FUNCTION(execRemovePauseMenu_Implementation); \
 	DECLARE_FUNCTION(execRemovePauseMenu); \
+	DECLARE_FUNCTION(execDisplayPauseMenu_Implementation); \
 	DECLARE_FUNCTION(execDisplayPauseMenu);
 
 

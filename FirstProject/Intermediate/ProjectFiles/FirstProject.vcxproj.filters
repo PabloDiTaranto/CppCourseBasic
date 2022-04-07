@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\FirstProject.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{79FCC241-9391-46AF-A348-66344679A9B4}</UniqueIdentifier>
+      <UniqueIdentifier>{B84B7904-610C-4C41-A33E-330EF148691E}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\FirstProject.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{421614D9-58BE-4F4E-B155-BC66FCFFB651}</UniqueIdentifier>
+      <UniqueIdentifier>{BB5A701C-71C1-49E9-9B11-758B1A3AF705}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -27,7 +27,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\FirstProject">
-      <UniqueIdentifier>{677F7A0E-6A6E-477A-9AD1-5307B9554AB3}</UniqueIdentifier>
+      <UniqueIdentifier>{82737AB3-6DDE-4747-A4C2-A135DF042ABF}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\FirstProject\Collider.cpp">
       <Filter>Source\FirstProject</Filter>
@@ -153,7 +153,7 @@
       <Filter>Source\FirstProject</Filter>
     </ClInclude>
     <Filter Include="Source\FirstProject\GameplayActors">
-      <UniqueIdentifier>{DA4B3EF7-4411-4F41-8916-8D8E5A42FA55}</UniqueIdentifier>
+      <UniqueIdentifier>{8977DAD5-1E54-4933-8DF8-4B672485432C}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\FirstProject\GameplayActors\Floater.cpp">
       <Filter>Source\FirstProject\GameplayActors</Filter>

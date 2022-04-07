@@ -20,11 +20,25 @@ void EmptyLinkFunctionForGeneratedCodeMainPlayerController() {}
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	UMG_API UClass* Z_Construct_UClass_UUserWidget_NoRegister();
 // End Cross Module References
+	DEFINE_FUNCTION(AMainPlayerController::execRemovePauseMenu_Implementation)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->RemovePauseMenu_Implementation();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(AMainPlayerController::execRemovePauseMenu)
 	{
 		P_FINISH;
 		P_NATIVE_BEGIN;
 		P_THIS->RemovePauseMenu_Implementation();
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(AMainPlayerController::execDisplayPauseMenu_Implementation)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->DisplayPauseMenu_Implementation();
 		P_NATIVE_END;
 	}
 	DEFINE_FUNCTION(AMainPlayerController::execDisplayPauseMenu)
@@ -49,7 +63,9 @@ void EmptyLinkFunctionForGeneratedCodeMainPlayerController() {}
 		UClass* Class = AMainPlayerController::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
 			{ "DisplayPauseMenu", &AMainPlayerController::execDisplayPauseMenu },
+			{ "DisplayPauseMenu_Implementation", &AMainPlayerController::execDisplayPauseMenu_Implementation },
 			{ "RemovePauseMenu", &AMainPlayerController::execRemovePauseMenu },
+			{ "RemovePauseMenu_Implementation", &AMainPlayerController::execRemovePauseMenu_Implementation },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 	}
@@ -76,6 +92,29 @@ void EmptyLinkFunctionForGeneratedCodeMainPlayerController() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_AMainPlayerController_DisplayPauseMenu_Implementation_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AMainPlayerController_DisplayPauseMenu_Implementation_Statics::Function_MetaDataParams[] = {
+		{ "Category", "HUD" },
+		{ "ModuleRelativePath", "MainPlayerController.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AMainPlayerController_DisplayPauseMenu_Implementation_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AMainPlayerController, nullptr, "DisplayPauseMenu_Implementation", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AMainPlayerController_DisplayPauseMenu_Implementation_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AMainPlayerController_DisplayPauseMenu_Implementation_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AMainPlayerController_DisplayPauseMenu_Implementation()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AMainPlayerController_DisplayPauseMenu_Implementation_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_AMainPlayerController_RemovePauseMenu_Statics
 	{
 #if WITH_METADATA
@@ -96,6 +135,29 @@ void EmptyLinkFunctionForGeneratedCodeMainPlayerController() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AMainPlayerController_RemovePauseMenu_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AMainPlayerController_RemovePauseMenu_Implementation_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AMainPlayerController_RemovePauseMenu_Implementation_Statics::Function_MetaDataParams[] = {
+		{ "Category", "HUD" },
+		{ "ModuleRelativePath", "MainPlayerController.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AMainPlayerController_RemovePauseMenu_Implementation_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AMainPlayerController, nullptr, "RemovePauseMenu_Implementation", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AMainPlayerController_RemovePauseMenu_Implementation_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AMainPlayerController_RemovePauseMenu_Implementation_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AMainPlayerController_RemovePauseMenu_Implementation()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AMainPlayerController_RemovePauseMenu_Implementation_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -144,7 +206,9 @@ void EmptyLinkFunctionForGeneratedCodeMainPlayerController() {}
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AMainPlayerController_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_AMainPlayerController_DisplayPauseMenu, "DisplayPauseMenu" }, // 1041142313
+		{ &Z_Construct_UFunction_AMainPlayerController_DisplayPauseMenu_Implementation, "DisplayPauseMenu_Implementation" }, // 1928189503
 		{ &Z_Construct_UFunction_AMainPlayerController_RemovePauseMenu, "RemovePauseMenu" }, // 1871704016
+		{ &Z_Construct_UFunction_AMainPlayerController_RemovePauseMenu_Implementation, "RemovePauseMenu_Implementation" }, // 1051195666
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMainPlayerController_Statics::Class_MetaDataParams[] = {
@@ -238,7 +302,7 @@ void EmptyLinkFunctionForGeneratedCodeMainPlayerController() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AMainPlayerController, 122928020);
+	IMPLEMENT_CLASS(AMainPlayerController, 918172539);
 	template<> FIRSTPROJECT_API UClass* StaticClass<AMainPlayerController>()
 	{
 		return AMainPlayerController::StaticClass();
